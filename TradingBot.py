@@ -11,7 +11,7 @@ class TradingBot:
     self.fetchData(period, interval);
   
   def fetchData(self, period, interval):
-    print(f"[FETCHING] Fetching {self.symbol} data for {period} with {interval} interval...");
+    # print(f"[FETCHING] Fetching {self.symbol} data for {period} with {interval} interval...");
     df = self.yahoo_finance_api.getHistoricalData(period=period, interval=interval);
     
     if df.empty:
@@ -34,6 +34,8 @@ class TradingBot:
     # Moving average data of the last n data points
     df["SMA_9"] = df["Close"].rolling(window=9).mean();
     df["SMA_20"] = df["Close"].rolling(window=20).mean();
+    df["SMA_30"] = df["Close"].rolling(window=30).mean();
+    df["SMA_40"] = df["Close"].rolling(window=40).mean();
     df["SMA_50"] = df["Close"].rolling(window=50).mean();
     
     # Calculate Typical price (Short term trend detection)
@@ -54,10 +56,13 @@ class TradingBot:
   
   def checkTradeSignal(self, row):    
     # SAFER ENTRY
-    # uptrend = (row["SMA_9"] > row["SMA_20"]) and (row["SMA_20"] > row["SMA_50"]);
+    # Safer entry reduces profits but is safer, works better with 1m interval 
+    # For more safety increase SMA_30
+    uptrend = (row["SMA_9"] > row["SMA_20"]) and (row["SMA_20"] > row["SMA_30"]);
     
     # RISKIER ENTRY:
-    uptrend = (row["SMA_9"] > row["SMA_20"])
+    # Riskier entry combos well with higher interval such as 5m and higher stop loss %
+    # uptrend = (row["SMA_9"] > row["SMA_20"])
     
     # Ensure RSI is not in overbought
     momentum_ok = (row["RSI"] > 50) and (row["RSI"] < 80);

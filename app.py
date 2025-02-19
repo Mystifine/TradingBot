@@ -10,19 +10,41 @@ def main():
   # Load environment variables
   load_dotenv();
   
-  SYMBOL = "MRNA";
-  PERIOD = "7d";
-  INTERVAL = "1m";
-  INITIAL_CASH = 10000;
+  SYMBOL = "SPY";
+  PERIOD = "1d"; # one week average is decent test size for 5m interval, 1d pairs better with 1m
+  INTERVAL = "1m"; # 5 minutes is good if combined with 1week+, If day trading with 1d then 1m pairs better
+  INITIAL_CASH = 10000; # 10k is realistic 
   
-  # TEST DATA
-  PROFIT_TAKER_PERCENT = 8 #range(1, 21, 1);
-  STOP_LOSS_PERCENT = 4;
-  
+  # 8-11% is pretty decent however if market isn't doing well the lower the safer and better generally
+  PROFIT_TAKER_PERCENT = 9; #range(1, 21, 1);
+  # Lower stop loss percent will reduce losses but it also removes oppurtunity for profit
+  STOP_LOSS_PERCENT = 7;
+  """
   soxl_yf_api = YahooFinanceAPI(SYMBOL);
   trading_bot = TradingBot(SYMBOL, PERIOD, INTERVAL);
   simulator = TradingSimulator(SYMBOL, INITIAL_CASH, trading_bot, STOP_LOSS_PERCENT, PROFIT_TAKER_PERCENT);
   simulator.runSimulation(0);
+  """
+  symbols = [
+    "TSLA", "NVDA", "AMD", "AAPL", "GOOG", "META", "AMZN", "MSFT", "NFLX", "BA",
+    "COIN", "PLTR", "GME", "NIO", "XPEV", "LI", "BABA", "PDD", "TME",
+    "SOFI", "ROKU", "SPCE", "RIVN", "LCID", "FSLY", "SNOW", "CRWD", "ZM",
+    "UPST", "AFRM", "ARKK", "BIDU", "JD", "SHOP", "DKNG", "CVNA", "MSTR",
+    "RIOT", "MARA", "HUT", "WKHS", "NKLA", "QS", "FUBO", "BLNK", "RUN",
+    "SOXL", "BOIL", "SPY", "GUSH", "ERX", "DIG", "EUO", "UTSL", "VOO", "QQQ"
+  ]
+
+  profit_count = 0;
+  for symbol in symbols:
+      trading_bot = TradingBot(symbol, PERIOD, INTERVAL);
+      if not hasattr(trading_bot, "data") or trading_bot.data.empty:
+        continue  # Skip if no valid data
+
+      simulator = TradingSimulator(symbol, INITIAL_CASH, trading_bot, STOP_LOSS_PERCENT, PROFIT_TAKER_PERCENT);
+      total_value = simulator.runSimulation(0);
+      if (total_value >= INITIAL_CASH):
+        profit_count += 1;
+  print(f"Profit Rate: {(profit_count/len(symbols))*100}%")
   
   """
   # Testing for best profit taker value
