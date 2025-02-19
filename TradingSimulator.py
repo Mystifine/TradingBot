@@ -1,99 +1,112 @@
 import pandas as pd;
 import yfinance as yf;
 import time;
-import ta;
+import os;
+import datetime;
 from TradingBot import TradingBot;
 
 class TradingSimulator:
-  def __init__(self, symbol, cash, trading_bot : TradingBot, stop_loss_percent, take_profit_percent):
-    self.symbol = symbol;
+  def __init__(self, trading_bot : TradingBot):
+    # Trading bot to handle decision making
     self.trading_bot = trading_bot;
+    self.total_value = None;
 
-    self.cash = cash;
-    self.shares = 0;
-    self.trading_tax = 10;
-
-    self.stop_loss_percent = stop_loss_percent;
-    self.take_profit_percent = take_profit_percent;
-    self.entry_price = None;
-    self.adjusted_entry_price = None;
+  def liveSimulation(self, speed, onFinish):
+    print(f"Starting real-time simulation for {self.trading_bot.symbol}...");
     
-    self.trade_log = [];
+    self.simulation_mode = "LIVE";
     
-  def checkTradeSignal(self, row):
-    if self.shares > 0 and self.adjusted_entry_price is not None:
-      stop_loss_price = self.adjusted_entry_price * (1 - self.stop_loss_percent)
-      take_profit_price = self.adjusted_entry_price * (1 + (self.take_profit_percent * 0.01))
-
-      # Ensure after-tax revenue is still profitable
-      if row["Close"] <= stop_loss_price:
-        # print(f"Stop-loss triggered at ${row['Close']:.2f} (Entry: ${self.entry_price:.2f})")
-        return "SELL"
-
-      #print(f"Consider selling: @{row["Close"]} | {take_profit_price}");
-      if row["Close"] >= take_profit_price:
-        after_tax_profit = (self.shares * row["Close"]) - self.trading_tax - (self.shares * self.adjusted_entry_price);
-        if (after_tax_profit > 0):
-          # print(f"Take-profit triggered at ${row['Close']:.2f} (Entry: ${self.entry_price:.2f})")
-          return "SELL"
-    return self.trading_bot.checkTradeSignal(row);
-  
-  def executeTrade(self, action, price):
-    if action == "BUY":
-      # We must have enough left over to make a trade to sell;
-      # Remove trading tax intentionally to reduce our purchasing power;
-      available_cash = self.cash - self.trading_tax;
-      if (available_cash >= price):
-        purchased_shares = available_cash // price;
-        total_cost = (purchased_shares * price + self.trading_tax);
-        self.cash -= total_cost;
-        self.shares += purchased_shares;
-        
-        self.entry_price = price;
-        self.adjusted_entry_price = price + (self.trading_tax / purchased_shares);
-        
-        self.trade_log.append((action, price, total_cost, purchased_shares))
-        # print(f"Bought {purchased_shares} shares at ${price:.2f}, Cash Left: ${self.cash:.2f}")
-
-    elif (action == "SELL" and self.shares > 0):
-      sold_shares = self.shares;
-      revenue = (sold_shares * price) - self.trading_tax;
-      self.cash += revenue;
-      self.shares = 0;
+    latest_row;
+    while True:
+      try:
+        latest_data = self.trading_bot.yahoo_finance_api.getHistoricalData(period="1d", interval="1m");
+        if latest_data is None or latest_data.empty:
+          print("Error fetching live data. Retrying...")
+          time.sleep(5)
+          continue  # Skip iteration and retry
       
-      self.entry_price = None;
-      self.adjusted_entry_price = None;
+        latest_row = latest_data.iloc[-1];
+        
+        new_entry = pd.DataFrame([latest_row]);
+        self.trading_bot.data = pd.concat([self.trading_bot.data, new_entry]).tail(200);
+        self.trading_bot.data = self.trading_bot.updateLastRowIndicator(self.trading_bot.data);
+        latest_row = self.trading_bot.data.iloc[-1];
+        
+        action = self.trading_bot.checkTradeSignal(latest_row);
+        if action in ["BUY", "SELL"]:
+          self.trading_bot.executeTrade(action, latest_row["Close"]);
+          
+        # Print real-time update
+        print(f"[{datetime.datetime.now().strftime('%H:%M:%S')}] Action: {action} | Price: ${latest_row['Close']:.2f}")
       
-      self.trade_log.append((action, price, revenue, sold_shares))
-      # print(f"Sold {sold_shares} shares at ${price:.2f}, New Balance: ${self.cash:.2f}")
-
-  def printTradeSummary(self):
-    print("\nTrade Summary:")
-    if not self.trade_log:
-      print("No trades executed.")
-      return
-
-    df_trades = pd.DataFrame(self.trade_log)
-    print(df_trades)
+        # Wait before next iteration (simulating real-time)
+        time.sleep(speed)
+      except KeyboardInterrupt:
+        onFinish();
+        break;
+      finally:
+        self.total_value = self.trading_bot.cash + self.trading_bot.shares * (latest_row["Close"]);
 
   def runSimulation(self, speed=0.1):
     # print("Starting Trading Simulator");
     last_row = None;
+    
+    self.simulation_mode = "HISTORY";
+    
     for index, row in self.trading_bot.data.iterrows():
 
-      action = self.checkTradeSignal(row);
+      action = self.trading_bot.checkTradeSignal(row);
       # print(f"Action: {action} | Close: {row['Close']:.2f} | RSI: {row['RSI']:.2f} | SMA_9: {row['SMA_9']:.2f} | SMA_20: {row["SMA_20"]:.2f} | SMA_50: {row["SMA_50"]:.2f} | VWAP: {row["VWAP"]:.2f}")
       
       if action in ["BUY", "SELL"]:
-        self.executeTrade(action, row["Close"]);
+        self.trading_bot.executeTrade(action, row["Close"]);
       last_row = row;
       time.sleep(speed);
     
     # Output all trades
     # self.printTradeSummary();
-    print(f"Simulation Complete {self.symbol} | Cash Left: {self.cash} | Shares Left: {self.shares} | Total Value: {self.cash + self.shares * (last_row["Close"])}");
+    print(f"Simulation Complete {self.trading_bot.symbol} | Cash Left: {self.trading_bot.cash:.2f} | Shares Left: {self.trading_bot.shares:.2f} | Total Value: {(self.trading_bot.cash + self.trading_bot.shares * (last_row["Close"])):.2f}");
 
-    total_value = self.cash + self.shares * (last_row["Close"]);
-    return total_value;
+    self.total_value = self.trading_bot.cash + self.trading_bot.shares * (last_row["Close"]);
+    return self.total_value;
         
-    
+  def logSimulationResults(self):
+    if self.total_value is None:
+      print("Simulation has not been ran yet");
+      return;
+  
+    # Define filename format (e.g., "SPY_10000_1d_1m.txt")
+    filename = f"{self.simulation_mode}_{self.trading_bot.symbol}_{self.trading_bot.initial_cash}_{self.trading_bot.period}_{self.trading_bot.interval}.txt"
+    log_dir = "simulation_data"  # Store logs in a dedicated folder
+    os.makedirs(log_dir, exist_ok=True)  # Create folder if not exists
+
+    filepath = os.path.join(log_dir, filename)
+
+    # Format trade log to be readable
+    formatted_log = "";
+    formatted_log += "{:<5} {:<10} {:<12} {:<10}\n".format("No.", "Action", "Price", "Shares")
+    for i, trade in enumerate(self.trading_bot.trade_log, start=1):
+        action, price, cost, shares = trade
+        formatted_log += "{:<5} {:<10} ${:<12.2f} {:<10}\n".format(i, action, price, int(shares))
+
+    # Prepare data to save
+    log_data = f"""
+    === Trading Simulation Log ===
+    Date: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
+    Symbol: {self.trading_bot.symbol}
+    Initial Cash: ${self.trading_bot.initial_cash:.2f}
+    Final Value: ${self.total_value:.2f}
+    Profit/Loss: ${self.total_value - self.trading_bot.initial_cash:.2f} ({((self.total_value - self.trading_bot.initial_cash) / self.trading_bot.initial_cash) * 100:.2f}%)
+    Stop Loss Price: {self.trading_bot.stop_loss_price:.2f}
+    Profit Taker Price: {self.trading_bot.profit_take_price:.2f}
+    Total Trades: {len(self.trading_bot.trade_log)}
+    Trade History:
+    {formatted_log}
+    ==============================
+    """
+
+    # Save to file
+    with open(filepath, "w") as file:
+      file.write(log_data)
+
+    print(f"Simulation results saved to {filepath}")

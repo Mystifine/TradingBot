@@ -1,0 +1,23 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 17:09:28
+    Symbol: AC.TO
+    Initial Cash: $10000.00
+    Final Value: $9962.75
+    Profit/Loss: $-37.25 (-0.37%)
+    Stop Loss Price: 0.04
+    Profit Taker Price: 0.09
+    Total Trades: 8
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $17.45        573       
+2     SELL       $17.39        573       
+3     BUY        $17.40        572       
+4     SELL       $17.49        572       
+5     BUY        $17.50        572       
+6     SELL       $17.45        572       
+7     BUY        $17.45        572       
+8     SELL       $17.41        572       
+
+    ==============================
+    
