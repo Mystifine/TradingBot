@@ -1,0 +1,22 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:39
+    Symbol: CHAU
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $10170.34
+    Profit/Loss: $170.34 (1.70%)
+    Stop Loss Price: 0.15
+    Total Trades: 5
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $14.54        687       
+2     SELL       $14.36        687       
+3     BUY        $14.41        685       
+4     SELL       $14.73        685       
+5     BUY        $14.66        688       
+
+    ==============================
+    

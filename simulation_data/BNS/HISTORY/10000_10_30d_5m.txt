@@ -1,0 +1,22 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 23:00:08
+    Symbol: BNS
+    Period: 30d
+    Interval: 5m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9012.21
+    Profit/Loss: $-987.79 (-9.88%)
+    Stop Loss Price: 2.54
+    Total Trades: 5
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $54.02        184       
+2     SELL       $51.45        184       
+3     BUY        $51.88        183       
+4     SELL       $47.85        183       
+5     BUY        $49.34        177       
+
+    ==============================
+    

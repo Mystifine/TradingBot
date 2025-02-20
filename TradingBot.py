@@ -16,6 +16,7 @@ class TradingBot:
     self.cash = cash;
     self.shares = 0;
     self.minimum_percent_stop_loss = minimum_percent_stop_loss;
+    self.highest_marked_priced = None;
     self.entry_price = None;
     self.trailing_stop_price = None;
     self.trading_tax = trading_tax; # In $
@@ -43,47 +44,19 @@ class TradingBot:
       return
     
     # Drop rows with missing values
-    df.dropna(inplace=True)
+    df.dropna(inplace=True);
 
-    # Convert close to a 1d array shape
-    df["Close"] = df["Close"].values.ravel();
-
+    df.sort_index(ascending=True,inplace=True); # Oldest to newest
+    
     # Store the data and calculate indicators to be used
     self.data = self.calculateIndicators(df);
     return self.data;
   
   def calculateDynamicStopLossPrice(self):
-    # Get the latest ATR value
-    atr_value = self.data["ATR"].iloc[-1];
+    # Calculate stop loss that is a % of the current price
+    raw_stop_loss_price = self.data["Close"].iloc[-1] * (self.minimum_percent_stop_loss/100);
 
-    base_stop_loss_multiplier = None;
-    
-    """
-    if (atr_value > self.data["ATR"].mean()):
-      # High Volatility, Give more space for growth
-      base_stop_loss_multiplier = 2.5;
-    else:
-      # Low Volatility, Tighter space to cut losses
-      base_stop_loss_multiplier = 2.0;
-    """
-    
-    # Scaling based off RSI
-    if self.data["RSI"].iloc[-1] > 65:
-      base_stop_loss_multiplier = 2.8  # Looser stop for strong trends
-    elif self.data["RSI"].iloc[-1] < 50:
-        base_stop_loss_multiplier = 1.8  # Tighter stop for weaker trends
-    else:
-        base_stop_loss_multiplier = 2.5
-
-      
-    # Calculate actual stop loss and profit take prices
-    # raw_stop_loss_price = atr_value * base_stop_loss_multiplier;
-    raw_stop_loss_price = max(atr_value * base_stop_loss_multiplier, self.data["Close"].iloc[-1] * (self.minimum_percent_stop_loss/100))  # Ensure at least 1.5% stop-loss
-
-    # Include tax consideration, trading tax is multiplied by 2 because buy and sell usually applies the trading tax
-    adjusted_stop_loss_price = raw_stop_loss_price + ((self.trading_tax * 2) / self.data["Close"].iloc[-1]);
-    
-    return adjusted_stop_loss_price;
+    return raw_stop_loss_price;
 
   def calculateIndicators(self, df):
     df = df.copy();
@@ -136,55 +109,66 @@ class TradingBot:
     return df;
   
   def checkTradeSignal(self, row):  
+    buy_signal = False;
+        
+    # STRONG UPTREND CHECK: This is a strict uptrend checker that signals immediate buy
+    uptrend = (row["SMA_9"] > row["SMA_20"]) and (row["SMA_20"] > row["SMA_40"]) and (row["SMA_40"] > row["SMA_50"]);
+  
+    # LENIENT MACD CROSSOVER CHECK: Allows for earlier trend detection and earlier entry
+    macd_crossover = (row["MACD"] > row["MACD_Signal"]) and (row["MACD"] > 0)
+    
+    # MOMENTUM CHECK: Looks for strong momentum
+    momentum_ok = (row["RSI"] > 50) and (row["RSI"] < 80);
+    
+    # PRICE CHECK: Price confirmation, we make it more lenient by lowering the VWAP value if we need to
+    price_above_vwap = row["Close"] > row["VWAP"]
+    price_above_ema = row["Close"] > row["SMA_20"] and row["Close"] > row["SMA_40"]  # Ensures strength
+    
+    # Check if volume is increasing (confirmation of demand)
+    increasing_volume = row["Volume"] > (self.data["Volume"].rolling(window=5).mean().iloc[-1] * 1.25);
+
+    # If we see strong uptrend or a macd_crossover we can look to buy
+    #if uptrend and macd_crossover and momentum_ok and price_above_vwap and price_above_ema and increasing_volume:
+    #if (macd_crossover and momentum_ok and price_above_vwap) or (row["RSI"] > 60 and price_above_ema):
+    if (
+      (macd_crossover and row["RSI"] > 55 and price_above_vwap) or # MACD + Momentum + VWAP
+      (momentum_ok and increasing_volume and price_above_ema) or # Strong Volume + EMA
+      (row["RSI"] > 60 and row["Close"] > row["SMA_9"] and increasing_volume) # RSI + EMA 9 Bounce
+    ):
+      buy_signal = True;
+    
     # Check if holding shares and create an exit condition.
     if self.shares > 0 and self.entry_price is not None:
   
-      # Fixed Stop-loss (Cuts losses)
-      if row["Close"] <= (self.entry_price - self.stop_loss_price):
+      # Fixed Stop-loss (cuts losses)
+      if (row["Close"] <= (self.entry_price - self.stop_loss_price)):
         return "SELL";
       
       # Trailing stop-loss initial value setup
       if self.trailing_stop_price is None:
         self.trailing_stop_price = self.entry_price - self.stop_loss_price;
         
+      # Mark the highest marked price
+      if self.highest_marked_priced is None:
+        self.highest_marked_priced = self.entry_price;
+        
       # If the price moves favorably, move the trailing stop price up but only on strong gains to prevent premature exits
-      if row["Close"] > self.entry_price + (self.data["ATR"].iloc[-1] * 1.25):
-        # Dynamically update trailing stop-loss value. Consider the volatility / volume
-        atr_multiplier = 3;
-        if row["RSI"] > 70:
-            atr_multiplier = 3.5  # Let strong trends run longer
-        elif row["RSI"] < 50:
-            atr_multiplier = 2.2  # Cut weaker trends faster
-        else:
-            atr_multiplier = 3.0
+      growth_percent = (row["Close"] / self.highest_marked_priced) - 1
+      self.highest_marked_priced = max(self.highest_marked_priced, row["Close"]);
+      
+      # If the growth is at least 0.5% then adjust
+      if (row["Close"] > self.entry_price) and (growth_percent >= 0.005):
           
-        # Increase the trailing to be always a % under the highest price minimum.
-        new_trailing_stop = row["Close"] - max(self.data["ATR"].iloc[-1] * atr_multiplier, row["Close"] * (self.minimum_percent_stop_loss/100));
+        new_trailing_stop = row["Close"] - (row["Close"] * (self.minimum_percent_stop_loss/100));
         
         # Always try to increase the trailing stop price so we can get out
-        self.trailing_stop_price = max(self.trailing_stop_price,new_trailing_stop);
+        self.trailing_stop_price = max(self.trailing_stop_price, new_trailing_stop);
         
       # If the price drops to our trailing_stop_price then we will sell and guarantee profits
       if row["Close"] <= self.trailing_stop_price:
         return "SELL";
     
-    # STRONG UPTREND CHECK: This is a strict uptrend checker that signals immediate buy
-    uptrend = (row["SMA_9"] > row["SMA_20"]) and (row["SMA_20"] > row["SMA_40"]);
-    
-    # LENIENT MACD CROSSOVER CHECK: Allows for earlier trend detection and earlier entry
-    macd_crossover = (row["MACD"] > row["MACD_Signal"]) and (row["MACD"] > 0); # Bullish cross over
-    
-    # MOMENTUM CHECK: Looks for momentum in the trend
-    momentum_ok = (row["RSI"] > 50) and (row["RSI"] < 80);
-    
-    # PRICE CHECK: Price confirmation, we make it more lenient by lowering the VWAP value if we need to
-    price_above_vwap = row["Close"] > (row["VWAP"]);
-    
-    # Check if volume is increasing (confirmation of trend)
-    increasing_volume = row["Volume"] > self.data["Volume"].rolling(window=5).mean().iloc[-1] * 1.2;
-
-    # If we see strong uptrend or a macd_crossover we can look to buy
-    if (uptrend or macd_crossover) and momentum_ok and price_above_vwap and increasing_volume:
+    if buy_signal:
       return "BUY";
     
     # HOLD (No clear signal)

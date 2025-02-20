@@ -1,0 +1,26 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 23:00:07
+    Symbol: AMC
+    Period: 30d
+    Interval: 5m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9090.65
+    Profit/Loss: $-909.35 (-9.09%)
+    Stop Loss Price: 0.18
+    Total Trades: 9
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $4.04         2472      
+2     SELL       $3.82         2472      
+3     BUY        $3.83         2464      
+4     SELL       $3.64         2464      
+5     BUY        $3.64         2458      
+6     SELL       $3.46         2458      
+7     BUY        $3.34         2545      
+8     SELL       $3.15         2545      
+9     BUY        $3.14         2542      
+
+    ==============================
+    

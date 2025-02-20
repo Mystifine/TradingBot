@@ -1,0 +1,43 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:33
+    Symbol: GME
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $10427.93
+    Profit/Loss: $427.93 (4.28%)
+    Stop Loss Price: 0.26
+    Total Trades: 26
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $24.90        401       
+2     SELL       $26.35        401       
+3     BUY        $26.57        398       
+4     SELL       $26.29        398       
+5     BUY        $26.39        396       
+6     SELL       $26.10        396       
+7     BUY        $26.43        391       
+8     SELL       $26.89        391       
+9     BUY        $27.10        388       
+10    SELL       $27.09        388       
+11    BUY        $27.29        385       
+12    SELL       $26.97        385       
+13    BUY        $26.86        387       
+14    SELL       $26.59        387       
+15    BUY        $26.01        395       
+16    SELL       $27.75        395       
+17    BUY        $27.52        399       
+18    SELL       $27.23        399       
+19    BUY        $27.10        401       
+20    SELL       $26.81        401       
+21    BUY        $27.00        398       
+22    SELL       $26.73        398       
+23    BUY        $26.79        397       
+24    SELL       $26.53        397       
+25    BUY        $26.52        397       
+26    SELL       $26.23        397       
+
+    ==============================
+    

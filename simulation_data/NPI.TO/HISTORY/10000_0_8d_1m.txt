@@ -1,0 +1,24 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:23
+    Symbol: NPI.TO
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $10150.24
+    Profit/Loss: $150.24 (1.50%)
+    Stop Loss Price: 0.17
+    Total Trades: 7
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $16.93        590       
+2     SELL       $16.73        590       
+3     BUY        $16.73        590       
+4     SELL       $16.54        590       
+5     BUY        $16.63        587       
+6     SELL       $16.45        587       
+7     BUY        $16.59        582       
+
+    ==============================
+    

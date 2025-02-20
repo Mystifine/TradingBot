@@ -1,0 +1,20 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 22:55:34
+    Symbol: NVDA
+    Period: 16d
+    Interval: 5m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $11084.59
+    Profit/Loss: $1084.59 (10.85%)
+    Stop Loss Price: 6.96
+    Total Trades: 3
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $121.33       82        
+2     SELL       $114.07       82        
+3     BUY        $117.60       79        
+
+    ==============================
+    

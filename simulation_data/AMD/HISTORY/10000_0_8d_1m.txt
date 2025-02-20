@@ -1,0 +1,20 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:44
+    Symbol: AMD
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $10495.96
+    Profit/Loss: $495.96 (4.96%)
+    Stop Loss Price: 1.15
+    Total Trades: 3
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $109.63       91        
+2     SELL       $108.37       91        
+3     BUY        $107.96       91        
+
+    ==============================
+    

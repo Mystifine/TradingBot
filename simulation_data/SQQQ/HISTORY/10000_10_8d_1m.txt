@@ -1,0 +1,30 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 01:06:50
+    Symbol: SQQQ
+    Period: 8d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9509.57
+    Profit/Loss: $-490.43 (-4.90%)
+    Stop Loss Price: 0.26
+    Total Trades: 13
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $27.73        360       
+2     SELL       $28.26        360       
+3     BUY        $27.86        364       
+4     SELL       $27.51        364       
+5     BUY        $27.31        366       
+6     SELL       $27.03        366       
+7     BUY        $27.02        366       
+8     SELL       $26.73        366       
+9     BUY        $26.85        363       
+10    SELL       $26.58        363       
+11    BUY        $26.59        362       
+12    SELL       $26.31        362       
+13    BUY        $26.45        360       
+
+    ==============================
+    

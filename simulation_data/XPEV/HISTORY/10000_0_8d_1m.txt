@@ -1,0 +1,28 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:47
+    Symbol: XPEV
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $10727.49
+    Profit/Loss: $727.49 (7.27%)
+    Stop Loss Price: 0.18
+    Total Trades: 11
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $16.93        590       
+2     SELL       $16.90        590       
+3     BUY        $16.63        600       
+4     SELL       $15.59        600       
+5     BUY        $15.51        603       
+6     SELL       $17.29        603       
+7     BUY        $17.24        604       
+8     SELL       $18.00        604       
+9     BUY        $18.14        600       
+10    SELL       $17.93        600       
+11    BUY        $18.05        596       
+
+    ==============================
+    

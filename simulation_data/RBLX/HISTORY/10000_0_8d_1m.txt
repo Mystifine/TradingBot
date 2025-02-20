@@ -1,0 +1,35 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:53
+    Symbol: RBLX
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $9008.99
+    Profit/Loss: $-991.01 (-9.91%)
+    Stop Loss Price: 0.64
+    Total Trades: 18
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $67.01        149       
+2     SELL       $67.10        149       
+3     BUY        $67.84        147       
+4     SELL       $66.13        147       
+5     BUY        $66.40        147       
+6     SELL       $65.23        147       
+7     BUY        $64.85        147       
+8     SELL       $64.12        147       
+9     BUY        $66.30        143       
+10    SELL       $65.62        143       
+11    BUY        $66.24        141       
+12    SELL       $65.49        141       
+13    BUY        $66.22        140       
+14    SELL       $65.58        140       
+15    BUY        $65.60        140       
+16    SELL       $64.93        140       
+17    BUY        $64.71        140       
+18    SELL       $64.07        140       
+
+    ==============================
+    

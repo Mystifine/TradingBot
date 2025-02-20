@@ -1,0 +1,24 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 01:06:24
+    Symbol: DIS
+    Period: 8d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9883.49
+    Profit/Loss: $-116.51 (-1.17%)
+    Stop Loss Price: 1.11
+    Total Trades: 7
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $111.96       89        
+2     SELL       $110.83       89        
+3     BUY        $111.18       88        
+4     SELL       $110.05       88        
+5     BUY        $109.26       89        
+6     SELL       $107.88       89        
+7     BUY        $108.19       88        
+
+    ==============================
+    

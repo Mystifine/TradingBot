@@ -1,0 +1,20 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:43
+    Symbol: AAPL
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $10646.72
+    Profit/Loss: $646.72 (6.47%)
+    Stop Loss Price: 2.45
+    Total Trades: 3
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $228.86       43        
+2     SELL       $235.99       43        
+3     BUY        $236.97       43        
+
+    ==============================
+    

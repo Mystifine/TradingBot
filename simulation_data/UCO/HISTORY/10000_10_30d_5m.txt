@@ -1,0 +1,22 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 23:00:02
+    Symbol: UCO
+    Period: 30d
+    Interval: 5m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9786.41
+    Profit/Loss: $-213.59 (-2.14%)
+    Stop Loss Price: 1.42
+    Total Trades: 5
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $28.64        348       
+2     SELL       $29.25        348       
+3     BUY        $29.76        342       
+4     SELL       $28.33        342       
+5     BUY        $28.15        343       
+
+    ==============================
+    

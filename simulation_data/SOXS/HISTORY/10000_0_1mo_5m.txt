@@ -1,0 +1,28 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 22:14:20
+    Symbol: SOXS
+    Period: 1mo
+    Interval: 5m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $10640.46
+    Profit/Loss: $640.46 (6.40%)
+    Stop Loss Price: 0.35
+    Total Trades: 11
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $17.53        570       
+2     SELL       $16.83        570       
+3     BUY        $16.68        575       
+4     SELL       $20.43        575       
+5     BUY        $20.84        564       
+6     SELL       $20.45        564       
+7     BUY        $19.48        592       
+8     SELL       $19.11        592       
+9     BUY        $19.45        581       
+10    SELL       $18.44        581       
+11    BUY        $17.56        611       
+
+    ==============================
+    

@@ -1,0 +1,28 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 22:27:28
+    Symbol: CYBN
+    Period: 5d
+    Interval: 5m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9150.11
+    Profit/Loss: $-849.89 (-8.50%)
+    Stop Loss Price: 0.23
+    Total Trades: 11
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $9.49         1052      
+2     SELL       $9.83         1052      
+3     BUY        $9.91         1042      
+4     SELL       $9.63         1042      
+5     BUY        $9.64         1038      
+6     SELL       $9.41         1038      
+7     BUY        $9.54         1022      
+8     SELL       $9.22         1022      
+9     BUY        $9.44         996       
+10    SELL       $9.20         996       
+11    BUY        $9.30         983       
+
+    ==============================
+    

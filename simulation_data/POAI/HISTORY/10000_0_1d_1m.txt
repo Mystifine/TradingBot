@@ -1,0 +1,24 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:04:23
+    Symbol: POAI
+    Period: 1d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $9579.46
+    Profit/Loss: $-420.54 (-4.21%)
+    Stop Loss Price: 0.02
+    Total Trades: 7
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $1.55         6451      
+2     SELL       $1.53         6451      
+3     BUY        $1.55         6348      
+4     SELL       $1.53         6348      
+5     BUY        $1.52         6386      
+6     SELL       $1.50         6386      
+7     BUY        $1.51         6344      
+
+    ==============================
+    

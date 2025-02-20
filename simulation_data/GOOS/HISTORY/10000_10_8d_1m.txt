@@ -1,0 +1,22 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 01:06:54
+    Symbol: GOOS
+    Period: 8d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10743.74
+    Profit/Loss: $743.74 (7.44%)
+    Stop Loss Price: 0.11
+    Total Trades: 5
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $9.61         1039      
+2     SELL       $9.75         1039      
+3     BUY        $9.84         1027      
+4     SELL       $9.73         1027      
+5     BUY        $9.83         1015      
+
+    ==============================
+    

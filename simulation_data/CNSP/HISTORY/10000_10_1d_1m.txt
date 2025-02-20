@@ -1,0 +1,28 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:51:00
+    Symbol: CNSP
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9371.05
+    Profit/Loss: $-628.95 (-6.29%)
+    Stop Loss Price: 0.00
+    Total Trades: 11
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $0.10         102251    
+2     SELL       $0.10         102251    
+3     BUY        $0.10         100273    
+4     SELL       $0.10         100273    
+5     BUY        $0.10         99347     
+6     SELL       $0.10         99347     
+7     BUY        $0.10         99036     
+8     SELL       $0.10         99036     
+9     BUY        $0.09         100509    
+10    SELL       $0.09         100509    
+11    BUY        $0.08         111959    
+
+    ==============================
+    

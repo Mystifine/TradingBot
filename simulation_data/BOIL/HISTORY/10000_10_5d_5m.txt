@@ -1,0 +1,20 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 22:27:27
+    Symbol: BOIL
+    Period: 5d
+    Interval: 5m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $13600.23
+    Profit/Loss: $3600.23 (36.00%)
+    Stop Loss Price: 2.40
+    Total Trades: 3
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $67.99        146       
+2     SELL       $71.27        146       
+3     BUY        $73.59        141       
+
+    ==============================
+    

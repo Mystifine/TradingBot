@@ -1,0 +1,26 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 01:06:25
+    Symbol: ERX
+    Period: 8d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10648.90
+    Profit/Loss: $648.90 (6.49%)
+    Stop Loss Price: 0.63
+    Total Trades: 9
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $59.58        167       
+2     SELL       $58.92        167       
+3     BUY        $59.95        164       
+4     SELL       $61.51        164       
+5     BUY        $61.63        163       
+6     SELL       $60.91        163       
+7     BUY        $59.27        168       
+8     SELL       $63.48        168       
+9     BUY        $63.30        168       
+
+    ==============================
+    

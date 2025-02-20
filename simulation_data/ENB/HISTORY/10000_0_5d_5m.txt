@@ -1,0 +1,20 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 22:14:36
+    Symbol: ENB
+    Period: 5d
+    Interval: 5m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $9648.68
+    Profit/Loss: $-351.32 (-3.51%)
+    Stop Loss Price: 0.85
+    Total Trades: 3
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $45.31        220       
+2     SELL       $44.17        220       
+3     BUY        $42.75        228       
+
+    ==============================
+    

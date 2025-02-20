@@ -1,0 +1,36 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:52
+    Symbol: BABA
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $11062.57
+    Profit/Loss: $1062.57 (10.63%)
+    Stop Loss Price: 1.26
+    Total Trades: 19
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $106.13       94        
+2     SELL       $104.84       94        
+3     BUY        $107.35       92        
+4     SELL       $112.08       92        
+5     BUY        $113.15       91        
+6     SELL       $115.97       91        
+7     BUY        $116.27       90        
+8     SELL       $114.98       90        
+9     BUY        $117.32       89        
+10    SELL       $124.02       89        
+11    BUY        $123.77       89        
+12    SELL       $122.28       89        
+13    BUY        $122.83       88        
+14    SELL       $121.52       88        
+15    BUY        $122.11       88        
+16    SELL       $127.01       88        
+17    BUY        $126.50       88        
+18    SELL       $125.07       88        
+19    BUY        $126.30       87        
+
+    ==============================
+    

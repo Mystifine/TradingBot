@@ -1,0 +1,38 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 01:06:38
+    Symbol: SAVA
+    Period: 8d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $11737.76
+    Profit/Loss: $1737.76 (17.38%)
+    Stop Loss Price: 0.03
+    Total Trades: 21
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $2.34         4278      
+2     SELL       $2.30         4278      
+3     BUY        $2.28         4316      
+4     SELL       $2.43         4316      
+5     BUY        $2.44         4290      
+6     SELL       $2.46         4290      
+7     BUY        $2.42         4356      
+8     SELL       $2.38         4356      
+9     BUY        $2.41         4293      
+10    SELL       $2.52         4293      
+11    BUY        $2.56         4219      
+12    SELL       $2.56         4219      
+13    BUY        $2.58         4164      
+14    SELL       $2.56         4164      
+15    BUY        $2.56         4152      
+16    SELL       $2.52         4152      
+17    BUY        $2.52         4136      
+18    SELL       $2.72         4136      
+19    BUY        $2.71         4138      
+20    SELL       $2.80         4138      
+21    BUY        $2.74         4214      
+
+    ==============================
+    

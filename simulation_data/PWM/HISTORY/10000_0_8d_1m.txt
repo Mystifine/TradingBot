@@ -1,0 +1,57 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:04:04
+    Symbol: PWM
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $7434.96
+    Profit/Loss: $-2565.04 (-25.65%)
+    Stop Loss Price: 0.01
+    Total Trades: 40
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $1.42         7042      
+2     SELL       $1.48         7042      
+3     BUY        $1.48         7042      
+4     SELL       $1.44         7042      
+5     BUY        $1.44         7018      
+6     SELL       $1.43         7018      
+7     BUY        $1.42         7067      
+8     SELL       $1.40         7067      
+9     BUY        $1.41         7017      
+10    SELL       $1.40         7017      
+11    BUY        $1.44         6847      
+12    SELL       $1.40         6847      
+13    BUY        $1.42         6751      
+14    SELL       $1.41         6751      
+15    BUY        $1.43         6656      
+16    SELL       $1.40         6656      
+17    BUY        $1.44         6472      
+18    SELL       $1.43         6472      
+19    BUY        $1.46         6339      
+20    SELL       $1.45         6339      
+21    BUY        $1.44         6383      
+22    SELL       $1.42         6383      
+23    BUY        $1.45         6274      
+24    SELL       $1.44         6274      
+25    BUY        $1.47         6167      
+26    SELL       $1.45         6167      
+27    BUY        $1.46         6128      
+28    SELL       $1.44         6128      
+29    BUY        $1.45         6086      
+30    SELL       $1.44         6086      
+31    BUY        $1.45         6044      
+32    SELL       $1.41         6044      
+33    BUY        $1.35         6326      
+34    SELL       $1.33         6326      
+35    BUY        $1.35         6232      
+36    SELL       $1.33         6232      
+37    BUY        $1.37         6069      
+38    SELL       $1.36         6069      
+39    BUY        $1.21         6821      
+40    SELL       $1.09         6821      
+
+    ==============================
+    

@@ -1,0 +1,26 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:48
+    Symbol: LI
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $10098.48
+    Profit/Loss: $98.48 (0.98%)
+    Stop Loss Price: 0.26
+    Total Trades: 9
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $26.50        377       
+2     SELL       $26.22        377       
+3     BUY        $26.06        379       
+4     SELL       $26.75        379       
+5     BUY        $26.69        380       
+6     SELL       $26.42        380       
+7     BUY        $26.41        380       
+8     SELL       $25.13        380       
+9     BUY        $25.08        381       
+
+    ==============================
+    

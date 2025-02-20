@@ -1,0 +1,18 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 22:14:35
+    Symbol: BB
+    Period: 5d
+    Interval: 5m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $10616.42
+    Profit/Loss: $616.42 (6.16%)
+    Stop Loss Price: 0.12
+    Total Trades: 1
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $5.51         1813      
+
+    ==============================
+    

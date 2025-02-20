@@ -1,0 +1,26 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:54
+    Symbol: META
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $9671.42
+    Profit/Loss: $-328.58 (-3.29%)
+    Stop Loss Price: 7.04
+    Total Trades: 9
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $723.40       13        
+2     SELL       $716.01       13        
+3     BUY        $718.55       13        
+4     SELL       $710.20       13        
+5     BUY        $716.93       13        
+6     SELL       $709.77       13        
+7     BUY        $708.45       13        
+8     SELL       $701.39       13        
+9     BUY        $699.06       13        
+
+    ==============================
+    

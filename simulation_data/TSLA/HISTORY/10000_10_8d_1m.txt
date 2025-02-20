@@ -1,0 +1,30 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 01:06:49
+    Symbol: TSLA
+    Period: 8d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10124.38
+    Profit/Loss: $124.38 (1.24%)
+    Stop Loss Price: 3.61
+    Total Trades: 13
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $377.43       26        
+2     SELL       $373.29       26        
+3     BUY        $374.42       26        
+4     SELL       $370.11       26        
+5     BUY        $362.05       26        
+6     SELL       $356.20       26        
+7     BUY        $357.00       26        
+8     SELL       $353.32       26        
+9     BUY        $344.36       27        
+10    SELL       $340.32       27        
+11    BUY        $332.04       28        
+12    SELL       $328.19       28        
+13    BUY        $327.08       28        
+
+    ==============================
+    

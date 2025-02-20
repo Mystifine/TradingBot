@@ -1,0 +1,40 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:46
+    Symbol: INTC
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $13130.46
+    Profit/Loss: $3130.46 (31.30%)
+    Stop Loss Price: 0.26
+    Total Trades: 23
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $19.17        521       
+2     SELL       $21.60        521       
+3     BUY        $21.37        527       
+4     SELL       $21.00        527       
+5     BUY        $21.25        521       
+6     SELL       $24.14        521       
+7     BUY        $24.46        514       
+8     SELL       $24.17        514       
+9     BUY        $23.28        533       
+10    SELL       $25.43        533       
+11    BUY        $25.28        536       
+12    SELL       $25.91        536       
+13    BUY        $26.02        534       
+14    SELL       $25.76        534       
+15    BUY        $25.91        531       
+16    SELL       $25.60        531       
+17    BUY        $26.04        522       
+18    SELL       $25.74        522       
+19    BUY        $26.05        516       
+20    SELL       $25.75        516       
+21    BUY        $25.97        512       
+22    SELL       $25.66        512       
+23    BUY        $25.74        510       
+
+    ==============================
+    

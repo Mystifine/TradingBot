@@ -1,0 +1,20 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 01:06:37
+    Symbol: GOOG
+    Period: 8d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9931.84
+    Profit/Loss: $-68.16 (-0.68%)
+    Stop Loss Price: 1.87
+    Total Trades: 3
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $186.94       53        
+2     SELL       $184.46       53        
+3     BUY        $185.38       53        
+
+    ==============================
+    

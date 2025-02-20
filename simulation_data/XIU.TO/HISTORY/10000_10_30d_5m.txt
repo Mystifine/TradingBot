@@ -1,0 +1,18 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 23:00:10
+    Symbol: XIU.TO
+    Period: 30d
+    Interval: 5m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10295.08
+    Profit/Loss: $295.08 (2.95%)
+    Stop Loss Price: 1.95
+    Total Trades: 1
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $37.89        263       
+
+    ==============================
+    

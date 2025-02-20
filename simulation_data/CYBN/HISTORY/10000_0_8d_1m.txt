@@ -1,0 +1,60 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:00:25
+    Symbol: CYBN
+    Period: 8d
+    Interval: 1m
+    Tax: $0.00
+    Initial Cash: $10000.00
+    Final Value: $9219.62
+    Profit/Loss: $-780.38 (-7.80%)
+    Stop Loss Price: 0.09
+    Total Trades: 43
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $9.10         1098      
+2     SELL       $8.96         1098      
+3     BUY        $9.05         1088      
+4     SELL       $8.95         1088      
+5     BUY        $9.03         1079      
+6     SELL       $8.90         1079      
+7     BUY        $9.00         1066      
+8     SELL       $9.46         1066      
+9     BUY        $9.45         1067      
+10    SELL       $9.32         1067      
+11    BUY        $9.46         1052      
+12    SELL       $9.35         1052      
+13    BUY        $9.38         1049      
+14    SELL       $9.60         1049      
+15    BUY        $9.73         1035      
+16    SELL       $9.62         1035      
+17    BUY        $9.63         1034      
+18    SELL       $9.53         1034      
+19    BUY        $9.63         1023      
+20    SELL       $9.50         1023      
+21    BUY        $9.49         1024      
+22    SELL       $10.30        1024      
+23    BUY        $10.53        1002      
+24    SELL       $10.42        1002      
+25    BUY        $10.40        1004      
+26    SELL       $10.17        1004      
+27    BUY        $10.32        990       
+28    SELL       $10.19        990       
+29    BUY        $9.88         1021      
+30    SELL       $9.78         1021      
+31    BUY        $9.85         1014      
+32    SELL       $9.73         1014      
+33    BUY        $9.80         1007      
+34    SELL       $9.70         1007      
+35    BUY        $9.50         1028      
+36    SELL       $9.39         1028      
+37    BUY        $9.51         1014      
+38    SELL       $9.35         1014      
+39    BUY        $9.39         1010      
+40    SELL       $9.29         1010      
+41    BUY        $9.29         1010      
+42    SELL       $9.12         1010      
+43    BUY        $9.30         991       
+
+    ==============================
+    

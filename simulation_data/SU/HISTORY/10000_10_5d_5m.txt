@@ -1,0 +1,18 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 22:27:27
+    Symbol: SU
+    Period: 5d
+    Interval: 5m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10025.14
+    Profit/Loss: $25.14 (0.25%)
+    Stop Loss Price: 1.00
+    Total Trades: 1
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $39.75        251       
+
+    ==============================
+    

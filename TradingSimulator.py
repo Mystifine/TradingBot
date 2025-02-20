@@ -16,7 +16,7 @@ class TradingSimulator:
     
     self.simulation_mode = "LIVE";
     
-    latest_row;
+    latest_row = None;
     while True:
       try:
         latest_data = self.trading_bot.yahoo_finance_api.getHistoricalData(period="1d", interval="1m");
@@ -54,7 +54,6 @@ class TradingSimulator:
     self.simulation_mode = "HISTORY";
     
     for index, row in self.trading_bot.data.iterrows():
-
       action = self.trading_bot.checkTradeSignal(row);
       # print(f"Action: {action} | Close: {row['Close']:.2f} | RSI: {row['RSI']:.2f} | SMA_9: {row['SMA_9']:.2f} | SMA_20: {row["SMA_20"]:.2f} | SMA_50: {row["SMA_50"]:.2f} | VWAP: {row["VWAP"]:.2f}")
       
@@ -65,9 +64,9 @@ class TradingSimulator:
     
     # Output all trades
     # self.printTradeSummary();
-    print(f"Simulation Complete {self.trading_bot.symbol} | Cash Left: {self.trading_bot.cash:.2f} | Shares Left: {self.trading_bot.shares:.2f} | Total Value: {(self.trading_bot.cash + self.trading_bot.shares * (last_row["Close"])):.2f}");
-
     self.total_value = self.trading_bot.cash + self.trading_bot.shares * (last_row["Close"]);
+    print(f"Simulation Complete {self.trading_bot.symbol} | Cash Left: {self.trading_bot.cash:.2f} | Shares Left: {self.trading_bot.shares:.2f} | Total Value: {self.total_value:.2f}");
+
     return self.total_value;
         
   def logSimulationResults(self):
@@ -76,8 +75,8 @@ class TradingSimulator:
       return;
   
     # Define filename format (e.g., "SPY_10000_1d_1m.txt")
-    filename = f"{self.simulation_mode}_{self.trading_bot.symbol}_{self.trading_bot.initial_cash}_{self.trading_bot.trading_tax}_{self.trading_bot.period}_{self.trading_bot.interval}.txt"
-    log_dir = "simulation_data"  # Store logs in a dedicated folder
+    filename = f"{self.trading_bot.initial_cash}_{self.trading_bot.trading_tax}_{self.trading_bot.period}_{self.trading_bot.interval}.txt"
+    log_dir = f"simulation_data/{self.trading_bot.symbol}/{self.simulation_mode}"  # Store logs in a dedicated folder
     os.makedirs(log_dir, exist_ok=True)  # Create folder if not exists
 
     filepath = os.path.join(log_dir, filename)
@@ -86,9 +85,9 @@ class TradingSimulator:
     formatted_log = "";
     formatted_log += "{:<5} {:<10} {:<12} {:<10}\n".format("No.", "Action", "Price", "Shares")
     for i, trade in enumerate(self.trading_bot.trade_log, start=1):
-        action, price, cost, shares = trade
-        formatted_log += "{:<5} {:<10} ${:<12.2f} {:<10}\n".format(i, action, price, int(shares))
-
+      action, price, cost, shares = trade
+      formatted_log += "{:<5} {:<10} ${:<12.2f} {:<10}\n".format(i, action, price, int(shares))
+      
     # Prepare data to save
     log_data = f"""
     === Trading Simulation Log ===

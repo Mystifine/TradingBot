@@ -1,0 +1,40 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:51:02
+    Symbol: TWG
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $8649.38
+    Profit/Loss: $-1350.62 (-13.51%)
+    Stop Loss Price: 0.00
+    Total Trades: 23
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $0.23         44125     
+2     SELL       $0.22         44125     
+3     BUY        $0.22         45255     
+4     SELL       $0.21         45255     
+5     BUY        $0.22         44785     
+6     SELL       $0.21         44785     
+7     BUY        $0.22         43749     
+8     SELL       $0.22         43749     
+9     BUY        $0.22         43474     
+10    SELL       $0.22         43474     
+11    BUY        $0.22         42987     
+12    SELL       $0.22         42987     
+13    BUY        $0.22         42567     
+14    SELL       $0.22         42567     
+15    BUY        $0.22         42225     
+16    SELL       $0.22         42225     
+17    BUY        $0.22         41383     
+18    SELL       $0.22         41383     
+19    BUY        $0.21         42635     
+20    SELL       $0.21         42635     
+21    BUY        $0.21         42559     
+22    SELL       $0.20         42559     
+23    BUY        $0.20         42607     
+
+    ==============================
+    

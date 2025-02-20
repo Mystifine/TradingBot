@@ -1,0 +1,32 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-20 00:51:01
+    Symbol: SOPA
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $8526.45
+    Profit/Loss: $-1473.55 (-14.74%)
+    Stop Loss Price: 0.02
+    Total Trades: 15
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $2.41         4143      
+2     SELL       $2.36         4143      
+3     BUY        $2.33         4196      
+4     SELL       $2.30         4196      
+5     BUY        $2.31         4169      
+6     SELL       $2.26         4169      
+7     BUY        $2.32         4062      
+8     SELL       $2.23         4062      
+9     BUY        $2.24         4026      
+10    SELL       $2.22         4026      
+11    BUY        $2.29         3894      
+12    SELL       $2.26         3894      
+13    BUY        $2.24         3920      
+14    SELL       $2.20         3920      
+15    BUY        $2.21         3884      
+
+    ==============================
+    

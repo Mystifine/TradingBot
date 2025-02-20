@@ -1,14 +1,18 @@
 # TradingBot
-This is a day trading bot designed with day trading parameters. Could be used for other forms of trading but it is not recommended as tests cases and simulations were done for day trading. This application focuses on buying and selling shares only.
+This is a bot designed to day trade especially in volatile environments. 
 
-Ideal Day Trading Parameters:
-- 5m Interval allows for better ATR measurements. 1m interval introduces too much noise and triggers too many trades, fees will eat your balance alive.
-- 1d Allows for recent data trends especially good for day trading since past data isn't as relevant. We are looking to read live trends.
+# Best Parameters:
+- 1m interval allows for best quick adaptive analysis in volatile environments.
+- 8d period allows you to simulate trading over 8d of historic data. When actively trading you technically only need maybe 1-2 days. 
+- 1% minimum losses cut is ideal for day trading, for long term trading you could increase it.
+
+# Algorithm
+1. Enter market safetly when trends suggest bullish movement and growth
+2. If price drops to a threshold sell to cut losses
+3. If price grows have a trailing stop loss price to allow infinite growth on strong trends (You've struck gold)
 
 ## Features
-- Dynamic stop loss based on ATR (Average True Range).
-- Minimum % Stop loss on highest price (Trailing stop loss).
-- Trailing stop loss allows for strong trends to keep running.
+- Dynamic adaptive trailing losses combined with minimum % stop loss to maximize revenue and cut losses.
 - Uptrend detection using SMA_N (Moving average over last n data points)
 - MACD cross over check for bullish market and lenient entry (used in combination of Uptrend detection)
 - Market momentum check using RSI (Relative Strength Index)
