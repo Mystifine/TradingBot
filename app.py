@@ -10,21 +10,21 @@ def main():
   # Load environment variables
   load_dotenv();
   
-  SYMBOL = "MULN";
-  PERIOD = "8d";
+  SYMBOL = "SOXL";
+  PERIOD = "1d";
   INTERVAL = "1m"; 
   INITIAL_CASH = 10000; 
   TRADING_TAX = 10; # $ per transaction
   MINIMUM_PERCENT_STOP_LOSS = 1; # In %
   
   # Simulation run
-  #trading_bot = TradingBot(SYMBOL, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX, MINIMUM_PERCENT_STOP_LOSS);
-  #simulator = TradingSimulator(trading_bot);
+  trading_bot = TradingBot(SYMBOL, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX, MINIMUM_PERCENT_STOP_LOSS);
+  simulator = TradingSimulator(trading_bot);
   #simulator.runSimulation(0);
-  #simulator.liveSimulation(1, simulator.logSimulationResults);
+  simulator.liveSimulation(1, simulator.logSimulationResults);
   #simulator.logSimulationResults();
   
-
+  """
   symbols = [
     # Greens
     "SOXL", "BOIL", "UCO", "SU", "NPI.TO", "DIS", "CYBN", "ERX",
@@ -64,10 +64,10 @@ def main():
       loss_symbols.append(symbol);
       total_losses.append( abs(percent_change) )
 
-  print("All Percent Gains:", total_gains)
-  print("Gain Symbols:", gain_symbols);
-  print("All Percent Losses:", total_losses)
-  print("Loss Symbols:", loss_symbols);
+  #print("All Percent Gains:", total_gains)
+  #print("Gain Symbols:", gain_symbols);
+  #print("All Percent Losses:", total_losses)
+  #print("Loss Symbols:", loss_symbols);
 
   # Calculate average gain
   average_gain = 0;
@@ -92,7 +92,7 @@ def main():
   print(f"Trading Tax: ${TRADING_TAX}");
   print(f"Average Gain: {average_gain:.2f}%")
   print(f"Average Loss: {average_loss:.2f}%")
-
+  """
   
 if __name__ == "__main__":
   main();
