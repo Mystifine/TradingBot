@@ -1,12 +1,14 @@
 
     === Trading Simulation Log ===
-    Date: 2025-02-19 17:09:27
-    Symbol: ERX
+    Date: 2025-02-19 20:06:08
+    Symbol: SOXL
+    Period: 1d
+    Interval: 5m
+    Tax: $0.00
     Initial Cash: $10000.00
     Final Value: $10000.00
     Profit/Loss: $0.00 (0.00%)
-    Stop Loss Price: 0.18
-    Profit Taker Price: 0.37
+    Stop Loss Price: 0.50
     Total Trades: 0
     Trade History:
     No.   Action     Price        Shares    

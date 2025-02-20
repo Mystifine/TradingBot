@@ -1,0 +1,19 @@
+
+    === Trading Simulation Log ===
+    Date: 2025-02-19 20:11:10
+    Symbol: SOXL
+    Period: 5d
+    Interval: 5m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10171.98
+    Profit/Loss: $171.98 (1.72%)
+    Stop Loss Price: 1.14
+    Total Trades: 2
+    Trade History:
+    No.   Action     Price        Shares    
+1     BUY        $30.67        325       
+2     SELL       $31.26        325       
+
+    ==============================
+    

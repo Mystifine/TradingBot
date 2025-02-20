@@ -6,7 +6,7 @@ import numpy as np;
 import ta;
 
 class TradingBot:
-  def __init__(self, symbol, period, interval, cash, trading_tax):
+  def __init__(self, symbol, period, interval, cash, trading_tax, minimum_percent_stop_loss):
     print(f"Initializing trading bot for {symbol}");
     self.symbol = symbol;
     self.period = period;
@@ -15,7 +15,9 @@ class TradingBot:
     self.initial_cash = cash;
     self.cash = cash;
     self.shares = 0;
+    self.minimum_percent_stop_loss = minimum_percent_stop_loss;
     self.entry_price = None;
+    self.trailing_stop_price = None;
     self.trading_tax = trading_tax; # In $
     
     # Cache trading logs data
@@ -29,9 +31,9 @@ class TradingBot:
     self.data = self.calculateIndicators(df);
     print(f"Indicators calculated")
 
-    # Calculate Volatility and create dynamic stop loss and profit take values
-    self.stop_loss_price, self.profit_take_price = self.calculateDynamicRiskParameters();
-    print(f"Dynamic risk parameters calculated | Stop Loss: ${self.stop_loss_price:.2f} | Profit Take: ${self.profit_take_price:.2f}");
+    # Calculate Volatility and create dynamic stop loss value
+    self.stop_loss_price = self.calculateDynamicStopLossPrice();
+    print(f"Dynamic risk parameters calculated | Stop Loss: ${self.stop_loss_price:.2f}");
     
   def fetchData(self, period, interval):
     df = self.yahoo_finance_api.getHistoricalData(period=period, interval=interval);
@@ -50,19 +52,38 @@ class TradingBot:
     self.data = self.calculateIndicators(df);
     return self.data;
   
-  def calculateDynamicRiskParameters(self):
+  def calculateDynamicStopLossPrice(self):
     # Get the latest ATR value
     atr_value = self.data["ATR"].iloc[-1];
 
-    # Calculate actual stop loss and profit take prices
-    raw_stop_loss_price = atr_value * 1.5;
-    raw_take_profit_price = atr_value * 3;
+    base_stop_loss_multiplier = None;
     
+    """
+    if (atr_value > self.data["ATR"].mean()):
+      # High Volatility, Give more space for growth
+      base_stop_loss_multiplier = 2.5;
+    else:
+      # Low Volatility, Tighter space to cut losses
+      base_stop_loss_multiplier = 2.0;
+    """
+    
+    # Scaling based off RSI
+    if self.data["RSI"].iloc[-1] > 65:
+      base_stop_loss_multiplier = 2.8  # Looser stop for strong trends
+    elif self.data["RSI"].iloc[-1] < 50:
+        base_stop_loss_multiplier = 1.8  # Tighter stop for weaker trends
+    else:
+        base_stop_loss_multiplier = 2.5
+
+      
+    # Calculate actual stop loss and profit take prices
+    # raw_stop_loss_price = atr_value * base_stop_loss_multiplier;
+    raw_stop_loss_price = max(atr_value * base_stop_loss_multiplier, self.data["Close"].iloc[-1] * (self.minimum_percent_stop_loss/100))  # Ensure at least 1.5% stop-loss
+
     # Include tax consideration, trading tax is multiplied by 2 because buy and sell usually applies the trading tax
     adjusted_stop_loss_price = raw_stop_loss_price + ((self.trading_tax * 2) / self.data["Close"].iloc[-1]);
-    adjusted_take_profit_price = raw_take_profit_price + ((self.trading_tax * 2) / self.data["Close"].iloc[-1]);
     
-    return adjusted_stop_loss_price, adjusted_take_profit_price;
+    return adjusted_stop_loss_price;
 
   def calculateIndicators(self, df):
     df = df.copy();
@@ -118,11 +139,33 @@ class TradingBot:
     # Check if holding shares and create an exit condition.
     if self.shares > 0 and self.entry_price is not None:
   
-      # Because the stop_loss_price and profit_take_price are offsets, we need to apply it to our entry price
+      # Fixed Stop-loss (Cuts losses)
       if row["Close"] <= (self.entry_price - self.stop_loss_price):
         return "SELL";
-
-      if row["Close"] >= (self.entry_price + self.profit_take_price):
+      
+      # Trailing stop-loss initial value setup
+      if self.trailing_stop_price is None:
+        self.trailing_stop_price = self.entry_price - self.stop_loss_price;
+        
+      # If the price moves favorably, move the trailing stop price up but only on strong gains to prevent premature exits
+      if row["Close"] > self.entry_price + (self.data["ATR"].iloc[-1] * 1.25):
+        # Dynamically update trailing stop-loss value. Consider the volatility / volume
+        atr_multiplier = 3;
+        if row["RSI"] > 70:
+            atr_multiplier = 3.5  # Let strong trends run longer
+        elif row["RSI"] < 50:
+            atr_multiplier = 2.2  # Cut weaker trends faster
+        else:
+            atr_multiplier = 3.0
+          
+        # Increase the trailing to be always a % under the highest price minimum.
+        new_trailing_stop = row["Close"] - max(self.data["ATR"].iloc[-1] * atr_multiplier, row["Close"] * (self.minimum_percent_stop_loss/100));
+        
+        # Always try to increase the trailing stop price so we can get out
+        self.trailing_stop_price = max(self.trailing_stop_price,new_trailing_stop);
+        
+      # If the price drops to our trailing_stop_price then we will sell and guarantee profits
+      if row["Close"] <= self.trailing_stop_price:
         return "SELL";
     
     # STRONG UPTREND CHECK: This is a strict uptrend checker that signals immediate buy
@@ -134,11 +177,14 @@ class TradingBot:
     # MOMENTUM CHECK: Looks for momentum in the trend
     momentum_ok = (row["RSI"] > 50) and (row["RSI"] < 80);
     
-    # PRICE CHECK: Price confirmation
-    price_above_vwap = row["Close"] > row["VWAP"];
+    # PRICE CHECK: Price confirmation, we make it more lenient by lowering the VWAP value if we need to
+    price_above_vwap = row["Close"] > (row["VWAP"]);
+    
+    # Check if volume is increasing (confirmation of trend)
+    increasing_volume = row["Volume"] > self.data["Volume"].rolling(window=5).mean().iloc[-1] * 1.2;
 
     # If we see strong uptrend or a macd_crossover we can look to buy
-    if (uptrend or macd_crossover) and momentum_ok and price_above_vwap:
+    if (uptrend or macd_crossover) and momentum_ok and price_above_vwap and increasing_volume:
       return "BUY";
     
     # HOLD (No clear signal)
@@ -156,6 +202,7 @@ class TradingBot:
         self.shares += purchased_shares;
         
         self.entry_price = price;
+        self.trailing_stop_price = price - self.stop_loss_price;
         
         self.trade_log.append((action, price, total_cost, purchased_shares))
         # print(f"Bought {purchased_shares} shares at ${price:.2f}, Cash Left: ${self.cash:.2f}")
@@ -167,6 +214,7 @@ class TradingBot:
       self.shares = 0;
       
       self.entry_price = None;
+      self.trailing_stop_price = None;
       
       self.trade_log.append((action, price, net_revenue, sold_shares))
       # print(f"Sold {sold_shares} shares at ${price:.2f}, New Balance: ${self.cash:.2f}")

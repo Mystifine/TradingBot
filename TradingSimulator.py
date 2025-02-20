@@ -76,7 +76,7 @@ class TradingSimulator:
       return;
   
     # Define filename format (e.g., "SPY_10000_1d_1m.txt")
-    filename = f"{self.simulation_mode}_{self.trading_bot.symbol}_{self.trading_bot.initial_cash}_{self.trading_bot.period}_{self.trading_bot.interval}.txt"
+    filename = f"{self.simulation_mode}_{self.trading_bot.symbol}_{self.trading_bot.initial_cash}_{self.trading_bot.trading_tax}_{self.trading_bot.period}_{self.trading_bot.interval}.txt"
     log_dir = "simulation_data"  # Store logs in a dedicated folder
     os.makedirs(log_dir, exist_ok=True)  # Create folder if not exists
 
@@ -94,11 +94,13 @@ class TradingSimulator:
     === Trading Simulation Log ===
     Date: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
     Symbol: {self.trading_bot.symbol}
+    Period: {self.trading_bot.period}
+    Interval: {self.trading_bot.interval}
+    Tax: ${self.trading_bot.trading_tax:.2f}
     Initial Cash: ${self.trading_bot.initial_cash:.2f}
     Final Value: ${self.total_value:.2f}
     Profit/Loss: ${self.total_value - self.trading_bot.initial_cash:.2f} ({((self.total_value - self.trading_bot.initial_cash) / self.trading_bot.initial_cash) * 100:.2f}%)
     Stop Loss Price: {self.trading_bot.stop_loss_price:.2f}
-    Profit Taker Price: {self.trading_bot.profit_take_price:.2f}
     Total Trades: {len(self.trading_bot.trade_log)}
     Trade History:
     {formatted_log}
