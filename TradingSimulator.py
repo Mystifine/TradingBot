@@ -83,13 +83,13 @@ class TradingSimulator:
 
     # Format trade log to be readable
     formatted_log = "";
-    formatted_log += "{:<5} {:<10} {:<12} {:<10}\n".format("No.", "Action", "Price", "Shares")
+    formatted_log += "{:<20} {:<5} {:<10} {:<12} {:<10}\n".format("Time", "No.", "Action", "Price", "Shares")
     for i, trade in enumerate(self.trading_bot.trade_log, start=1):
-      action, price, cost, shares = trade
-      formatted_log += "{:<5} {:<10} ${:<12.2f} {:<10}\n".format(i, action, price, int(shares))
+      action, price, order_time, shares = trade
+      formatted_log += "    {:<20} {:<5} {:<10} ${:<12.2f} {:<10}\n".format(order_time, i, action, price, int(shares))
       
     # Prepare data to save
-    log_data = f"""
+    log_data = f"""\
     === Trading Simulation Log ===
     Date: {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}
     Symbol: {self.trading_bot.symbol}
@@ -104,7 +104,7 @@ class TradingSimulator:
     Trade History:
     {formatted_log}
     ==============================
-    """
+"""
 
     # Save to file
     with open(filepath, "w") as file:

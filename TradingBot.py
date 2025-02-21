@@ -4,22 +4,24 @@ from YahooFinanceAPI import YahooFinanceAPI;
 import pandas as pd;
 import numpy as np;
 import ta;
+import datetime;
 
 class TradingBot:
-  def __init__(self, symbol, period, interval, cash, trading_tax, minimum_percent_stop_loss):
+  def __init__(self, symbol, period, interval, cash, trading_tax):
     print(f"Initializing trading bot for {symbol}");
     self.symbol = symbol;
     self.period = period;
     self.interval = interval;
     self.yahoo_finance_api = YahooFinanceAPI(symbol);
+    
+    self.trading_tax = trading_tax; # In $
     self.initial_cash = cash;
     self.cash = cash;
     self.shares = 0;
-    self.minimum_percent_stop_loss = minimum_percent_stop_loss;
+    self.trading_tax = trading_tax; # In $
+
     self.highest_marked_priced = None;
     self.entry_price = None;
-    self.trailing_stop_price = None;
-    self.trading_tax = trading_tax; # In $
     
     # Cache trading logs data
     self.trade_log = [];
@@ -33,8 +35,8 @@ class TradingBot:
     print(f"Indicators calculated")
 
     # Calculate Volatility and create dynamic stop loss value
-    self.stop_loss_price = self.calculateDynamicStopLossPrice();
-    print(f"Dynamic risk parameters calculated | Stop Loss: ${self.stop_loss_price:.2f}");
+    self.stop_loss_price = self.calculateStopLossPrice();
+    print(f"Risk parameters computed | Stop Loss: ${self.stop_loss_price:.2f}");
     
   def fetchData(self, period, interval):
     df = self.yahoo_finance_api.getHistoricalData(period=period, interval=interval);
@@ -52,11 +54,32 @@ class TradingBot:
     self.data = self.calculateIndicators(df);
     return self.data;
   
-  def calculateDynamicStopLossPrice(self):
-    # Calculate stop loss that is a % of the current price
-    raw_stop_loss_price = self.data["Close"].iloc[-1] * (self.minimum_percent_stop_loss/100);
-
-    return raw_stop_loss_price;
+  def calculateStopLossPrice(self):
+    # Calculate stop loss using average true range, ATR is how much the stock changes it price
+    # Used as a volatility measaurement
+    average_true_range = self.data["ATR"].iloc[-1];
+    
+    last_close = self.data["Close"].iloc[-1];
+    sma_50 = self.data["SMA_50"].iloc[-1];
+    relative_strength_index = self.data["RSI"].iloc[-1];
+    macd = self.data["MACD"].iloc[-1];
+    macd_signal= self.data["MACD_Signal"].iloc[-1];
+    
+    # By default set the stop loss price to the average true range * 2
+    atr_multiplier = 2;
+    if (last_close > sma_50 and relative_strength_index > 60 and macd > macd_signal):
+      # Allow for more growth in strong bullish markets
+      atr_multiplier = 3;
+    elif (last_close < sma_50 and relative_strength_index < 40 and macd < macd_signal):
+      # Cut losses in bad trends
+      atr_multiplier = 1.5;
+    else:
+      # In average market 
+      atr_multiplier = 2;
+    
+    stop_loss_price = average_true_range * atr_multiplier;
+    
+    return stop_loss_price;
 
   def calculateIndicators(self, df):
     df = df.copy();
@@ -73,31 +96,6 @@ class TradingBot:
     
     # Relative Strength Index (Momentum Indicator)
     df["RSI"] = ta.momentum.RSIIndicator(df["Close"].squeeze(),window=14).rsi();
-    
-    # MACD (Moving Average Convergence Divergence)
-    macd = ta.trend.MACD(df["Close"])
-    df["MACD"] = macd.macd()
-    df["MACD_Signal"] = macd.macd_signal();
-    
-    # Calculate average true range (Volatility measure)
-    df["ATR"] = ta.volatility.AverageTrueRange(high=df["High"], low=df["Low"], close=df["Close"], window=14).average_true_range();
-    return df;
-  
-  def updateLastRowIndicator(self, df):
-    df = df.copy();
-    
-    # Moving average data of the last n data points
-    df["SMA_9"] = df["Close"].rolling(window=9).mean();
-    df["SMA_20"] = df["Close"].rolling(window=20).mean();
-    df["SMA_30"] = df["Close"].rolling(window=30).mean();
-    df["SMA_40"] = df["Close"].rolling(window=40).mean();
-    df["SMA_50"] = df["Close"].rolling(window=50).mean();
-    
-    # Calculate VWAP (Weighted Average)
-    df["VWAP"] = (df["Close"] * df["Volume"]).cumsum() / df["Volume"].cumsum();
-    
-    # Relative Strength Index (Momentum Indicator)
-    df["RSI"] = ta.momentum.RSIIndicator(df["Close"],window=14).rsi();
     
     # MACD (Moving Average Convergence Divergence)
     macd = ta.trend.MACD(df["Close"])
@@ -188,7 +186,7 @@ class TradingBot:
         self.entry_price = price;
         self.trailing_stop_price = price - self.stop_loss_price;
         
-        self.trade_log.append((action, price, total_cost, purchased_shares))
+        self.trade_log.append((action, price, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), purchased_shares))
         # print(f"Bought {purchased_shares} shares at ${price:.2f}, Cash Left: ${self.cash:.2f}")
 
     elif (action == "SELL" and self.shares > 0):
@@ -200,7 +198,7 @@ class TradingBot:
       self.entry_price = None;
       self.trailing_stop_price = None;
       
-      self.trade_log.append((action, price, net_revenue, sold_shares))
+      self.trade_log.append((action, price, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), sold_shares))
       # print(f"Sold {sold_shares} shares at ${price:.2f}, New Balance: ${self.cash:.2f}")
 
   def printTradeSummary(self):

@@ -15,14 +15,14 @@ def main():
   INTERVAL = "1m"; 
   INITIAL_CASH = 10000; 
   TRADING_TAX = 10; # $ per transaction
-  MINIMUM_PERCENT_STOP_LOSS = 1; # In %
+  MINIMUM_PERCENT_STOP_LOSS = 2; # In %
   
   # Simulation run
   trading_bot = TradingBot(SYMBOL, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX, MINIMUM_PERCENT_STOP_LOSS);
   simulator = TradingSimulator(trading_bot);
-  #simulator.runSimulation(0);
-  simulator.liveSimulation(1, simulator.logSimulationResults);
-  #simulator.logSimulationResults();
+  simulator.runSimulation(0);
+  #simulator.liveSimulation(1, simulator.logSimulationResults);
+  simulator.logSimulationResults();
   
   """
   symbols = [
