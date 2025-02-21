@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:16
+    Symbol: HD
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9785.28
+    Profit/Loss: $-214.72 (-2.15%)
+    Stop Loss Price: 0.84
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:15  1     BUY        $412.51       24        
+    2025-02-21 00:38:15  2     SELL       $416.33       24        
+    2025-02-21 00:38:15  3     BUY        $409.52       24        
+    2025-02-21 00:38:15  4     SELL       $407.23       24        
+    2025-02-21 00:38:15  5     BUY        $403.24       24        
+    2025-02-21 00:38:15  6     SELL       $395.26       24        
+
+    ==============================

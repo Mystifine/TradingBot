@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:12
+    Symbol: IBM
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9862.71
+    Profit/Loss: $-137.29 (-1.37%)
+    Stop Loss Price: 0.38
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:12  1     BUY        $259.17       38        
+    2025-02-21 00:39:12  2     SELL       $258.12       38        
+    2025-02-21 00:39:12  3     BUY        $261.21       38        
+    2025-02-21 00:39:12  4     SELL       $260.78       38        
+    2025-02-21 00:39:12  5     BUY        $264.07       37        
+    2025-02-21 00:39:12  6     SELL       $263.50       37        
+
+    ==============================

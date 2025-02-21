@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:22
+    Symbol: AXP
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10003.03
+    Profit/Loss: $3.03 (0.03%)
+    Stop Loss Price: 0.45
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:22  1     BUY        $311.12       32        
+    2025-02-21 00:39:22  2     SELL       $311.84       32        
+
+    ==============================

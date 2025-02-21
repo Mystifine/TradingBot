@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:37
+    Symbol: COF
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9971.77
+    Profit/Loss: $-28.23 (-0.28%)
+    Stop Loss Price: 0.48
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:37  1     BUY        $204.04       48        
+    2025-02-21 00:40:37  2     SELL       $204.76       48        
+    2025-02-21 00:40:37  3     BUY        $210.49       47        
+    2025-02-21 00:40:37  4     SELL       $210.00       47        
+
+    ==============================

@@ -1,0 +1,24 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:51
+    Symbol: CAG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9401.12
+    Profit/Loss: $-598.88 (-5.99%)
+    Stop Loss Price: 0.08
+    Total Trades: 9
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:50  1     BUY        $25.31        394       
+    2025-02-21 00:42:50  2     SELL       $23.48        394       
+    2025-02-21 00:42:50  3     BUY        $23.55        392       
+    2025-02-21 00:42:50  4     SELL       $23.75        392       
+    2025-02-21 00:42:50  5     BUY        $23.97        388       
+    2025-02-21 00:42:50  6     SELL       $23.94        388       
+    2025-02-21 00:42:51  7     BUY        $24.25        382       
+    2025-02-21 00:42:51  8     SELL       $24.62        382       
+    2025-02-21 00:42:51  9     BUY        $24.85        378       
+
+    ==============================

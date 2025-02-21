@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:57
+    Symbol: BMY
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10003.85
+    Profit/Loss: $3.85 (0.04%)
+    Stop Loss Price: 0.20
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:57  1     BUY        $53.86        185       
+    2025-02-21 00:38:57  2     SELL       $53.63        185       
+    2025-02-21 00:38:57  3     BUY        $54.91        180       
+    2025-02-21 00:38:57  4     SELL       $55.39        180       
+
+    ==============================

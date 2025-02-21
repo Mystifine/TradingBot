@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:06:59
+    Symbol: PFE
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9920.08
+    Profit/Loss: $-79.92 (-0.80%)
+    Stop Loss Price: 0.09
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:06:59  1     BUY        $26.00        384       
+    2025-02-21 00:06:59  2     SELL       $25.87        384       
+    2025-02-21 00:06:59  3     BUY        $25.90        383       
+
+    ==============================

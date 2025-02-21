@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:45
+    Symbol: CNC
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10081.20
+    Profit/Loss: $81.20 (0.81%)
+    Stop Loss Price: 0.14
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:44  1     BUY        $56.64        176       
+    2025-02-21 00:40:45  2     SELL       $57.22        176       
+
+    ==============================

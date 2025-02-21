@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:37
+    Symbol: ROK
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9911.16
+    Profit/Loss: $-88.84 (-0.89%)
+    Stop Loss Price: 0.54
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:36  1     BUY        $296.03       33        
+    2025-02-21 00:41:36  2     SELL       $294.95       33        
+    2025-02-21 00:41:36  3     BUY        $300.77       33        
+    2025-02-21 00:41:36  4     SELL       $300.36       33        
+
+    ==============================

@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:08:48
+    Symbol: DOV
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9960.32
+    Profit/Loss: $-39.68 (-0.40%)
+    Stop Loss Price: 0.34
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:08:48  1     BUY        $207.00       48        
+    2025-02-21 00:08:48  2     SELL       $206.59       48        
+
+    ==============================

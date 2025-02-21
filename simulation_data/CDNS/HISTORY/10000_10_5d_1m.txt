@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:50
+    Symbol: CDNS
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9934.67
+    Profit/Loss: $-65.33 (-0.65%)
+    Stop Loss Price: 0.81
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:50  1     BUY        $277.75       35        
+    2025-02-21 00:41:50  2     SELL       $276.45       35        
+
+    ==============================

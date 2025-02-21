@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:09:50
+    Symbol: NGD
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10111.03
+    Profit/Loss: $111.03 (1.11%)
+    Stop Loss Price: 0.02
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:09:50  1     BUY        $2.93         3411      
+    2025-02-21 00:09:50  2     SELL       $3.01         3411      
+    2025-02-21 00:09:50  3     BUY        $3.02         3393      
+    2025-02-21 00:09:50  4     SELL       $2.99         3393      
+    2025-02-21 00:09:50  5     BUY        $3.02         3359      
+
+    ==============================

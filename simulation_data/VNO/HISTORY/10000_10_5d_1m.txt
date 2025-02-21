@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:23
+    Symbol: VNO
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9832.36
+    Profit/Loss: $-167.64 (-1.68%)
+    Stop Loss Price: 0.11
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:23  1     BUY        $42.12        237       
+    2025-02-21 00:43:23  2     SELL       $42.01        237       
+    2025-02-21 00:43:23  3     BUY        $41.28        240       
+    2025-02-21 00:43:23  4     SELL       $41.08        240       
+    2025-02-21 00:43:23  5     BUY        $39.90        247       
+    2025-02-21 00:43:23  6     SELL       $39.78        247       
+    2025-02-21 00:43:23  7     BUY        $39.83        246       
+    2025-02-21 00:43:23  8     SELL       $39.90        246       
+
+    ==============================

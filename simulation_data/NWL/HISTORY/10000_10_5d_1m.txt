@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:55
+    Symbol: NWL
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9694.86
+    Profit/Loss: $-305.14 (-3.05%)
+    Stop Loss Price: 0.05
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:55  1     BUY        $6.89         1449      
+    2025-02-21 00:42:55  2     SELL       $6.82         1449      
+    2025-02-21 00:42:55  3     BUY        $6.94         1423      
+    2025-02-21 00:42:55  4     SELL       $6.89         1423      
+    2025-02-21 00:42:55  5     BUY        $7.01         1396      
+    2025-02-21 00:42:55  6     SELL       $6.95         1396      
+    2025-02-21 00:42:55  7     BUY        $6.82         1422      
+
+    ==============================

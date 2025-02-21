@@ -1,0 +1,24 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:53
+    Symbol: APD
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9794.68
+    Profit/Loss: $-205.32 (-2.05%)
+    Stop Loss Price: 0.41
+    Total Trades: 9
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:53  1     BUY        $315.16       31        
+    2025-02-21 00:39:53  2     SELL       $316.00       31        
+    2025-02-21 00:39:53  3     BUY        $316.69       31        
+    2025-02-21 00:39:53  4     SELL       $316.08       31        
+    2025-02-21 00:39:53  5     BUY        $317.03       31        
+    2025-02-21 00:39:53  6     SELL       $313.95       31        
+    2025-02-21 00:39:53  7     BUY        $317.08       31        
+    2025-02-21 00:39:53  8     SELL       $316.21       31        
+    2025-02-21 00:39:53  9     BUY        $314.26       31        
+
+    ==============================

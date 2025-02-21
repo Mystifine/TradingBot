@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:58
+    Symbol: WBA
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10703.41
+    Profit/Loss: $703.41 (7.03%)
+    Stop Loss Price: 0.05
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:58  1     BUY        $9.90         1009      
+    2025-02-21 00:40:58  2     SELL       $9.82         1009      
+    2025-02-21 00:40:58  3     BUY        $9.94         995       
+    2025-02-21 00:40:58  4     SELL       $9.89         995       
+    2025-02-21 00:40:58  5     BUY        $10.01        981       
+    2025-02-21 00:40:58  6     SELL       $10.98        981       
+    2025-02-21 00:40:58  7     BUY        $10.82        994       
+    2025-02-21 00:40:58  8     SELL       $10.77        994       
+
+    ==============================

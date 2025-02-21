@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:54
+    Symbol: CL
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9832.08
+    Profit/Loss: $-167.92 (-1.68%)
+    Stop Loss Price: 0.19
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:54  1     BUY        $86.32        115       
+    2025-02-21 00:39:54  2     SELL       $86.48        115       
+    2025-02-21 00:39:54  3     BUY        $86.64        115       
+    2025-02-21 00:39:54  4     SELL       $86.45        115       
+    2025-02-21 00:39:54  5     BUY        $87.28        113       
+    2025-02-21 00:39:54  6     SELL       $87.23        113       
+    2025-02-21 00:39:54  7     BUY        $87.43        113       
+    2025-02-21 00:39:54  8     SELL       $86.74        113       
+
+    ==============================

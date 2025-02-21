@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:26
+    Symbol: AON
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9862.12
+    Profit/Loss: $-137.88 (-1.38%)
+    Stop Loss Price: 0.42
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:26  1     BUY        $387.69       25        
+    2025-02-21 00:40:26  2     SELL       $386.67       25        
+    2025-02-21 00:40:26  3     BUY        $391.95       25        
+    2025-02-21 00:40:26  4     SELL       $391.41       25        
+    2025-02-21 00:40:26  5     BUY        $392.36       25        
+    2025-02-21 00:40:26  6     SELL       $392.34       25        
+    2025-02-21 00:40:26  7     BUY        $394.74       25        
+    2025-02-21 00:40:26  8     SELL       $394.00       25        
+
+    ==============================

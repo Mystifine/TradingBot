@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:53
+    Symbol: HES
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10162.36
+    Profit/Loss: $162.36 (1.62%)
+    Stop Loss Price: 0.26
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:53  1     BUY        $145.83       68        
+    2025-02-21 00:41:53  2     SELL       $148.58       68        
+    2025-02-21 00:41:53  3     BUY        $149.20       68        
+    2025-02-21 00:41:53  4     SELL       $149.72       68        
+    2025-02-21 00:41:53  5     BUY        $150.29       67        
+    2025-02-21 00:41:53  6     SELL       $150.29       67        
+
+    ==============================

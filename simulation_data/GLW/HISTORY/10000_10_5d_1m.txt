@@ -1,0 +1,24 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:44
+    Symbol: GLW
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9856.07
+    Profit/Loss: $-143.93 (-1.44%)
+    Stop Loss Price: 0.16
+    Total Trades: 9
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:44  1     BUY        $52.08        191       
+    2025-02-21 00:41:44  2     SELL       $51.91        191       
+    2025-02-21 00:41:44  3     BUY        $52.58        188       
+    2025-02-21 00:41:44  4     SELL       $52.74        188       
+    2025-02-21 00:41:44  5     BUY        $52.90        188       
+    2025-02-21 00:41:44  6     SELL       $52.90        188       
+    2025-02-21 00:41:44  7     BUY        $52.66        188       
+    2025-02-21 00:41:44  8     SELL       $52.38        188       
+    2025-02-21 00:41:44  9     BUY        $51.88        189       
+
+    ==============================

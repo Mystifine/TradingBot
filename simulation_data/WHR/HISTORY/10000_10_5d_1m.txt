@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:02
+    Symbol: WHR
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10045.68
+    Profit/Loss: $45.68 (0.46%)
+    Stop Loss Price: 0.28
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:01  1     BUY        $99.10        100       
+    2025-02-21 00:43:01  2     SELL       $99.04        100       
+    2025-02-21 00:43:01  3     BUY        $102.52       97        
+    2025-02-21 00:43:01  4     SELL       $103.46       97        
+
+    ==============================

@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:10
+    Symbol: ALK
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10063.30
+    Profit/Loss: $63.30 (0.63%)
+    Stop Loss Price: 0.34
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:10  1     BUY        $75.65        132       
+    2025-02-21 00:43:10  2     SELL       $75.30        132       
+    2025-02-21 00:43:10  3     BUY        $76.28        130       
+    2025-02-21 00:43:10  4     SELL       $77.43        130       
+
+    ==============================

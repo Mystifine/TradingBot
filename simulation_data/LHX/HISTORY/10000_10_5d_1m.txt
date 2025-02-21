@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:03
+    Symbol: LHX
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10102.31
+    Profit/Loss: $102.31 (1.02%)
+    Stop Loss Price: 0.42
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:03  1     BUY        $199.94       49        
+    2025-02-21 00:42:03  2     SELL       $199.00       49        
+    2025-02-21 00:42:03  3     BUY        $195.46       50        
+    2025-02-21 00:42:03  4     SELL       $199.23       50        
+
+    ==============================

@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:27
+    Symbol: MCD
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9951.68
+    Profit/Loss: $-48.32 (-0.48%)
+    Stop Loss Price: 0.81
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:27  1     BUY        $310.75       32        
+    2025-02-21 00:38:27  2     SELL       $309.86       32        
+
+    ==============================

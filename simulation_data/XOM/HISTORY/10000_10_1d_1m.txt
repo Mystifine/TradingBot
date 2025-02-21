@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:06:49
+    Symbol: XOM
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9961.96
+    Profit/Loss: $-38.04 (-0.38%)
+    Stop Loss Price: 0.18
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:06:49  1     BUY        $112.32       88        
+    2025-02-21 00:06:49  2     SELL       $112.12       88        
+
+    ==============================

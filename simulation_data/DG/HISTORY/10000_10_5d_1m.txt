@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:29
+    Symbol: DG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9878.21
+    Profit/Loss: $-121.79 (-1.22%)
+    Stop Loss Price: 0.25
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:28  1     BUY        $76.45        130       
+    2025-02-21 00:40:28  2     SELL       $75.96        130       
+    2025-02-21 00:40:28  3     BUY        $76.84        128       
+    2025-02-21 00:40:28  4     SELL       $77.25        128       
+    2025-02-21 00:40:28  5     BUY        $77.14        128       
+    2025-02-21 00:40:28  6     SELL       $76.75        128       
+
+    ==============================

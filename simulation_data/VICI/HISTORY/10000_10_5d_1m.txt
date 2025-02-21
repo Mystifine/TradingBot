@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:59
+    Symbol: VICI
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10043.58
+    Profit/Loss: $43.58 (0.44%)
+    Stop Loss Price: 0.09
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:58  1     BUY        $30.47        327       
+    2025-02-21 00:41:58  2     SELL       $30.69        327       
+    2025-02-21 00:41:59  3     BUY        $30.77        326       
+
+    ==============================

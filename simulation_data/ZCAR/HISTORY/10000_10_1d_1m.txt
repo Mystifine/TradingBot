@@ -1,25 +1,19 @@
-
     === Trading Simulation Log ===
-    Date: 2025-02-20 00:51:01
+    Date: 2025-02-20 23:24:19
     Symbol: ZCAR
     Period: 1d
     Interval: 1m
     Tax: $10.00
     Initial Cash: $10000.00
-    Final Value: $9561.84
-    Profit/Loss: $-438.16 (-4.38%)
-    Stop Loss Price: 0.01
-    Total Trades: 8
+    Final Value: $9946.63
+    Profit/Loss: $-53.37 (-0.53%)
+    Stop Loss Price: 0.03
+    Total Trades: 4
     Trade History:
-    No.   Action     Price        Shares    
-1     BUY        $0.92         10858     
-2     SELL       $0.92         10858     
-3     BUY        $0.94         10595     
-4     SELL       $0.92         10595     
-5     BUY        $0.92         10529     
-6     SELL       $0.92         10529     
-7     BUY        $0.92         10518     
-8     SELL       $0.91         10518     
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 23:24:19  1     BUY        $0.59         16935     
+    2025-02-20 23:24:19  2     SELL       $0.56         16935     
+    2025-02-20 23:24:19  3     BUY        $0.58         16322     
+    2025-02-20 23:24:19  4     SELL       $0.61         16322     
 
     ==============================
-    

@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:49
+    Symbol: VRSK
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9914.76
+    Profit/Loss: $-85.24 (-0.85%)
+    Stop Loss Price: 0.39
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:49  1     BUY        $296.38       33        
+    2025-02-21 00:41:49  2     SELL       $296.07       33        
+    2025-02-21 00:41:49  3     BUY        $293.14       33        
+    2025-02-21 00:41:49  4     SELL       $292.74       33        
+    2025-02-21 00:41:49  5     BUY        $293.05       33        
+    2025-02-21 00:41:49  6     SELL       $293.00       33        
+
+    ==============================

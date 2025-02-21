@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:32
+    Symbol: VRTX
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9906.41
+    Profit/Loss: $-93.59 (-0.94%)
+    Stop Loss Price: 0.74
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:32  1     BUY        $464.89       21        
+    2025-02-21 00:40:32  2     SELL       $461.86       21        
+    2025-02-21 00:40:32  3     BUY        $464.17       21        
+    2025-02-21 00:40:32  4     SELL       $462.85       21        
+    2025-02-21 00:40:32  5     BUY        $462.12       21        
+    2025-02-21 00:40:32  6     SELL       $463.08       21        
+    2025-02-21 00:40:32  7     BUY        $471.74       20        
+    2025-02-21 00:40:32  8     SELL       $474.61       20        
+
+    ==============================

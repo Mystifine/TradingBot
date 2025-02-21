@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:37:58
+    Symbol: AMZN
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9820.89
+    Profit/Loss: $-179.11 (-1.79%)
+    Stop Loss Price: 0.42
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:37:57  1     BUY        $230.10       43        
+    2025-02-21 00:37:57  2     SELL       $229.11       43        
+    2025-02-21 00:37:57  3     BUY        $229.17       43        
+    2025-02-21 00:37:57  4     SELL       $228.71       43        
+    2025-02-21 00:37:57  5     BUY        $225.87       43        
+    2025-02-21 00:37:57  6     SELL       $224.77       43        
+    2025-02-21 00:37:58  7     BUY        $222.87       44        
+
+    ==============================

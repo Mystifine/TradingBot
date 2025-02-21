@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:21
+    Symbol: TFC
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9960.65
+    Profit/Loss: $-39.35 (-0.39%)
+    Stop Loss Price: 0.08
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:20  1     BUY        $46.45        215       
+    2025-02-21 00:41:20  2     SELL       $46.36        215       
+
+    ==============================

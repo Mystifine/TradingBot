@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:31
+    Symbol: MPC
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9968.12
+    Profit/Loss: $-31.88 (-0.32%)
+    Stop Loss Price: 0.40
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:30  1     BUY        $151.18       66        
+    2025-02-21 00:40:30  2     SELL       $151.00       66        
+
+    ==============================

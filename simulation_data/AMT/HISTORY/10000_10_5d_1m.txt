@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:13
+    Symbol: AMT
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9962.91
+    Profit/Loss: $-37.09 (-0.37%)
+    Stop Loss Price: 0.36
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:13  1     BUY        $190.54       52        
+    2025-02-21 00:39:13  2     SELL       $190.19       52        
+    2025-02-21 00:39:13  3     BUY        $191.73       51        
+    2025-02-21 00:39:13  4     SELL       $192.34       51        
+    2025-02-21 00:39:13  5     BUY        $192.38       51        
+
+    ==============================

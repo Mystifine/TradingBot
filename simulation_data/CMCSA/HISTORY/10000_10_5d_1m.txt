@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:39
+    Symbol: CMCSA
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10026.30
+    Profit/Loss: $26.30 (0.26%)
+    Stop Loss Price: 0.06
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:39  1     BUY        $35.49        281       
+    2025-02-21 00:38:39  2     SELL       $35.85        281       
+    2025-02-21 00:38:39  3     BUY        $36.37        276       
+    2025-02-21 00:38:39  4     SELL       $36.28        276       
+    2025-02-21 00:38:39  5     BUY        $36.40        275       
+
+    ==============================

@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:14
+    Symbol: HPQ
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9873.10
+    Profit/Loss: $-126.90 (-1.27%)
+    Stop Loss Price: 0.07
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:14  1     BUY        $33.95        294       
+    2025-02-21 00:41:14  2     SELL       $33.84        294       
+    2025-02-21 00:41:14  3     BUY        $34.22        290       
+    2025-02-21 00:41:14  4     SELL       $34.15        290       
+    2025-02-21 00:41:14  5     BUY        $34.72        285       
+    2025-02-21 00:41:14  6     SELL       $34.72        285       
+    2025-02-21 00:41:14  7     BUY        $34.73        284       
+
+    ==============================

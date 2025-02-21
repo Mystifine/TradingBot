@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:38
+    Symbol: USB
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9816.64
+    Profit/Loss: $-183.36 (-1.83%)
+    Stop Loss Price: 0.08
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:38  1     BUY        $47.12        212       
+    2025-02-21 00:39:38  2     SELL       $47.07        212       
+    2025-02-21 00:39:38  3     BUY        $47.39        210       
+    2025-02-21 00:39:38  4     SELL       $47.54        210       
+    2025-02-21 00:39:38  5     BUY        $47.74        208       
+    2025-02-21 00:39:38  6     SELL       $47.66        208       
+    2025-02-21 00:39:38  7     BUY        $47.94        207       
+    2025-02-21 00:39:38  8     SELL       $47.42        207       
+
+    ==============================

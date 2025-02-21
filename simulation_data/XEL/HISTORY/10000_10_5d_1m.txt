@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:39
+    Symbol: XEL
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9941.20
+    Profit/Loss: $-58.80 (-0.59%)
+    Stop Loss Price: 0.10
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:38  1     BUY        $69.33        144       
+    2025-02-21 00:41:38  2     SELL       $69.28        144       
+    2025-02-21 00:41:38  3     BUY        $68.60        145       
+    2025-02-21 00:41:38  4     SELL       $68.51        145       
+
+    ==============================

@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:08:47
+    Symbol: AEE
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9920.93
+    Profit/Loss: $-79.07 (-0.79%)
+    Stop Loss Price: 0.13
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:08:47  1     BUY        $97.39        102       
+    2025-02-21 00:08:47  2     SELL       $97.25        102       
+    2025-02-21 00:08:47  3     BUY        $97.01        102       
+    2025-02-21 00:08:47  4     SELL       $96.87        102       
+    2025-02-21 00:08:47  5     BUY        $97.23        102       
+
+    ==============================

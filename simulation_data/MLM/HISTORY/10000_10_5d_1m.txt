@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:20
+    Symbol: MLM
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9921.64
+    Profit/Loss: $-78.36 (-0.78%)
+    Stop Loss Price: 2.39
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:20  1     BUY        $533.61       18        
+    2025-02-21 00:42:20  2     SELL       $530.37       18        
+
+    ==============================

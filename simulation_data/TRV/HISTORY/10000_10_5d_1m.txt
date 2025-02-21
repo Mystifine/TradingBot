@@ -1,0 +1,24 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:44
+    Symbol: TRV
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9950.54
+    Profit/Loss: $-49.46 (-0.49%)
+    Stop Loss Price: 0.34
+    Total Trades: 9
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:43  1     BUY        $243.05       41        
+    2025-02-21 00:40:43  2     SELL       $242.44       41        
+    2025-02-21 00:40:43  3     BUY        $238.28       41        
+    2025-02-21 00:40:43  4     SELL       $238.38       41        
+    2025-02-21 00:40:43  5     BUY        $238.14       41        
+    2025-02-21 00:40:43  6     SELL       $240.51       41        
+    2025-02-21 00:40:44  7     BUY        $242.22       41        
+    2025-02-21 00:40:44  8     SELL       $241.34       41        
+    2025-02-21 00:40:44  9     BUY        $241.25       41        
+
+    ==============================

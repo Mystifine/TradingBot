@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:23
+    Symbol: YUM
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9921.79
+    Profit/Loss: $-78.21 (-0.78%)
+    Stop Loss Price: 0.27
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:23  1     BUY        $148.03       67        
+    2025-02-21 00:41:23  2     SELL       $147.77       67        
+    2025-02-21 00:41:23  3     BUY        $149.61       66        
+    2025-02-21 00:41:23  4     SELL       $149.29       66        
+
+    ==============================

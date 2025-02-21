@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:09:44
+    Symbol: SSRM
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9937.70
+    Profit/Loss: $-62.30 (-0.62%)
+    Stop Loss Price: 0.04
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:09:44  1     BUY        $10.62        940       
+    2025-02-21 00:09:44  2     SELL       $10.57        940       
+
+    ==============================

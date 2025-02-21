@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:52
+    Symbol: MDT
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9953.25
+    Profit/Loss: $-46.75 (-0.47%)
+    Stop Loss Price: 0.17
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:52  1     BUY        $93.03        107       
+    2025-02-21 00:38:52  2     SELL       $92.78        107       
+
+    ==============================

@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:52
+    Symbol: FTNT
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10031.86
+    Profit/Loss: $31.86 (0.32%)
+    Stop Loss Price: 0.51
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:52  1     BUY        $110.23       90        
+    2025-02-21 00:41:52  2     SELL       $109.64       90        
+    2025-02-21 00:41:52  3     BUY        $112.66       88        
+    2025-02-21 00:41:52  4     SELL       $113.90       88        
+    2025-02-21 00:41:52  5     BUY        $113.57       88        
+    2025-02-21 00:41:52  6     SELL       $113.29       88        
+    2025-02-21 00:41:52  7     BUY        $113.39       87        
+
+    ==============================

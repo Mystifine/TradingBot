@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:43
+    Symbol: HSY
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9974.20
+    Profit/Loss: $-25.80 (-0.26%)
+    Stop Loss Price: 0.57
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:43  1     BUY        $161.00       62        
+    2025-02-21 00:42:43  2     SELL       $160.10       62        
+    2025-02-21 00:42:43  3     BUY        $163.18       60        
+    2025-02-21 00:42:43  4     SELL       $162.67       60        
+    2025-02-21 00:42:43  5     BUY        $163.88       60        
+    2025-02-21 00:42:43  6     SELL       $165.89       60        
+
+    ==============================

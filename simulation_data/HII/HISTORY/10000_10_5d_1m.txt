@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:09
+    Symbol: HII
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9932.17
+    Profit/Loss: $-67.83 (-0.68%)
+    Stop Loss Price: 0.42
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:08  1     BUY        $161.39       61        
+    2025-02-21 00:43:08  2     SELL       $160.86       61        
+    2025-02-21 00:43:09  3     BUY        $165.83       59        
+    2025-02-21 00:43:09  4     SELL       $165.55       59        
+    2025-02-21 00:43:09  5     BUY        $171.79       57        
+    2025-02-21 00:43:09  6     SELL       $171.85       57        
+    2025-02-21 00:43:09  7     BUY        $173.97       56        
+    2025-02-21 00:43:09  8     SELL       $175.00       56        
+
+    ==============================

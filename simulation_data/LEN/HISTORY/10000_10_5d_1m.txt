@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:25
+    Symbol: LEN
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9601.06
+    Profit/Loss: $-398.94 (-3.99%)
+    Stop Loss Price: 0.39
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:25  1     BUY        $123.21       81        
+    2025-02-21 00:42:25  2     SELL       $122.85       81        
+    2025-02-21 00:42:25  3     BUY        $122.30       81        
+    2025-02-21 00:42:25  4     SELL       $118.56       81        
+    2025-02-21 00:42:25  5     BUY        $120.95       79        
+    2025-02-21 00:42:25  6     SELL       $120.99       79        
+    2025-02-21 00:42:25  7     BUY        $122.69       78        
+
+    ==============================

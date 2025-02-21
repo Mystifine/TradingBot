@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:08
+    Symbol: UNH
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9849.81
+    Profit/Loss: $-150.19 (-1.50%)
+    Stop Loss Price: 1.80
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:08  1     BUY        $498.39       20        
+    2025-02-21 00:38:08  2     SELL       $499.73       20        
+    2025-02-21 00:38:08  3     BUY        $510.92       19        
+    2025-02-21 00:38:08  4     SELL       $503.71       19        
+
+    ==============================

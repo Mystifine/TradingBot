@@ -1,17 +1,16 @@
-
     === Trading Simulation Log ===
-    Date: 2025-02-20 00:51:01
+    Date: 2025-02-20 23:24:19
     Symbol: BMBL
     Period: 1d
     Interval: 1m
     Tax: $10.00
     Initial Cash: $10000.00
-    Final Value: $10000.00
-    Profit/Loss: $0.00 (0.00%)
-    Stop Loss Price: 0.06
-    Total Trades: 0
+    Final Value: $9999.17
+    Profit/Loss: $-0.83 (-0.01%)
+    Stop Loss Price: 0.02
+    Total Trades: 1
     Trade History:
-    No.   Action     Price        Shares    
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 23:24:19  1     BUY        $5.45         1834      
 
     ==============================
-    

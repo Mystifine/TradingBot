@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:29
+    Symbol: SPGI
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9948.64
+    Profit/Loss: $-51.36 (-0.51%)
+    Stop Loss Price: 0.67
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:29  1     BUY        $542.17       18        
+    2025-02-21 00:39:29  2     SELL       $542.73       18        
+    2025-02-21 00:39:29  3     BUY        $542.95       18        
+    2025-02-21 00:39:29  4     SELL       $541.76       18        
+    2025-02-21 00:39:29  5     BUY        $540.69       18        
+    2025-02-21 00:39:29  6     SELL       $541.80       18        
+
+    ==============================

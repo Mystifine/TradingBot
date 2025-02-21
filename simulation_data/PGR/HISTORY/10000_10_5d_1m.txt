@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:06
+    Symbol: PGR
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9944.47
+    Profit/Loss: $-55.53 (-0.56%)
+    Stop Loss Price: 0.38
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:05  1     BUY        $261.95       38        
+    2025-02-21 00:40:05  2     SELL       $261.43       38        
+    2025-02-21 00:40:05  3     BUY        $263.66       37        
+    2025-02-21 00:40:05  4     SELL       $265.12       37        
+    2025-02-21 00:40:05  5     BUY        $263.82       37        
+    2025-02-21 00:40:05  6     SELL       $263.02       37        
+
+    ==============================

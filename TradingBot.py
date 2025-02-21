@@ -1,25 +1,27 @@
 import ta.momentum
 import ta.volatility
-from YahooFinanceAPI import YahooFinanceAPI;
 import pandas as pd;
 import numpy as np;
 import ta;
 import datetime;
+import pytz;
+
+from MarketAPI import MarketAPI;
 
 class TradingBot:
-  def __init__(self, symbol, period, interval, cash, trading_tax):
+  def __init__(self, symbol, period, interval, cash, trading_tax, api : MarketAPI):
     print(f"Initializing trading bot for {symbol}");
     self.symbol = symbol;
     self.period = period;
     self.interval = interval;
-    self.yahoo_finance_api = YahooFinanceAPI(symbol);
+    self.api = api(symbol);
     
     self.trading_tax = trading_tax; # In $
     self.initial_cash = cash;
     self.cash = cash;
     self.shares = 0;
-    self.trading_tax = trading_tax; # In $
 
+    self.trailing_stop_price = None;
     self.highest_marked_priced = None;
     self.entry_price = None;
     
@@ -28,6 +30,8 @@ class TradingBot:
     
     # Fetch data to use to analyze trends
     df = self.fetchData(period, interval);
+    if df is None:
+      return;
     print(f"Data fetched for over {period} at {interval} interval.");
 
     # Calculte Indicators on past data     
@@ -36,12 +40,12 @@ class TradingBot:
 
     # Calculate Volatility and create dynamic stop loss value
     self.stop_loss_price = self.calculateStopLossPrice();
-    print(f"Risk parameters computed | Stop Loss: ${self.stop_loss_price:.2f}");
+    print(f"Risk parameters computed | Calculated Stop Loss: ${self.stop_loss_price:.2f}");
     
   def fetchData(self, period, interval):
-    df = self.yahoo_finance_api.getHistoricalData(period=period, interval=interval);
+    df = self.api.getHistoricalData(period=period, interval=interval);
     
-    if df.empty:
+    if df is None or df.empty:
       print(f"No historical data found for {self.symbol}. Check API or market status.")
       return
     
@@ -57,26 +61,10 @@ class TradingBot:
   def calculateStopLossPrice(self):
     # Calculate stop loss using average true range, ATR is how much the stock changes it price
     # Used as a volatility measaurement
-    average_true_range = self.data["ATR"].iloc[-1];
-    
-    last_close = self.data["Close"].iloc[-1];
-    sma_50 = self.data["SMA_50"].iloc[-1];
-    relative_strength_index = self.data["RSI"].iloc[-1];
-    macd = self.data["MACD"].iloc[-1];
-    macd_signal= self.data["MACD_Signal"].iloc[-1];
+    average_true_range = self.data["ATR"].rolling(window=10).mean().iloc[-1]
     
     # By default set the stop loss price to the average true range * 2
     atr_multiplier = 2;
-    if (last_close > sma_50 and relative_strength_index > 60 and macd > macd_signal):
-      # Allow for more growth in strong bullish markets
-      atr_multiplier = 3;
-    elif (last_close < sma_50 and relative_strength_index < 40 and macd < macd_signal):
-      # Cut losses in bad trends
-      atr_multiplier = 1.5;
-    else:
-      # In average market 
-      atr_multiplier = 2;
-    
     stop_loss_price = average_true_range * atr_multiplier;
     
     return stop_loss_price;
@@ -86,16 +74,18 @@ class TradingBot:
     
     # Moving average data of the last n data points
     df["SMA_9"] = df["Close"].rolling(window=9).mean();
-    df["SMA_20"] = df["Close"].rolling(window=20).mean();
+    #df["SMA_20"] = df["Close"].rolling(window=20).mean();
     df["SMA_30"] = df["Close"].rolling(window=30).mean();
-    df["SMA_40"] = df["Close"].rolling(window=40).mean();
+    #df["SMA_40"] = df["Close"].rolling(window=40).mean();
     df["SMA_50"] = df["Close"].rolling(window=50).mean();
     
     # Calculate VWAP (Weighted Average)
-    df["VWAP"] = (df["Close"] * df["Volume"]).cumsum() / df["Volume"].cumsum();
+    df["Cumulative_TPV"] = (df["Close"] * df["Volume"]).groupby(df.index.date).cumsum()
+    df["Cumulative_Volume"] = df["Volume"].groupby(df.index.date).cumsum()
+    df["VWAP"] = df["Cumulative_TPV"] / df["Cumulative_Volume"]
     
     # Relative Strength Index (Momentum Indicator)
-    df["RSI"] = ta.momentum.RSIIndicator(df["Close"].squeeze(),window=14).rsi();
+    df["RSI"] = ta.momentum.RSIIndicator(df["Close"],window=14).rsi();
     
     # MACD (Moving Average Convergence Divergence)
     macd = ta.trend.MACD(df["Close"])
@@ -107,63 +97,79 @@ class TradingBot:
     return df;
   
   def checkTradeSignal(self, row):  
+    # Ignore the first 30 minutes and last 30 minutes in a trade
+    market_time = row.name.tz_convert(pytz.timezone("US/Eastern"));
+    market_hour = market_time.hour;
+    market_minute = market_time.minute;
+    
+    # Do not engage in any activities in the first 30 minutes and last 30 minutes of the stock market
+    if (market_hour == 9 and market_minute < 30) or (market_hour == 15 and market_minute >= 30):
+      return "HOLD";
+    
+    # Force sell at the 25 minute mark to avoid random market spikes near the end and start of the day
+    if self.shares > 0 and market_hour == 15 and market_minute == 25:
+      return "SELL";
+    
     buy_signal = False;
-        
-    # STRONG UPTREND CHECK: This is a strict uptrend checker that signals immediate buy
-    uptrend = (row["SMA_9"] > row["SMA_20"]) and (row["SMA_20"] > row["SMA_40"]) and (row["SMA_40"] > row["SMA_50"]);
-  
-    # LENIENT MACD CROSSOVER CHECK: Allows for earlier trend detection and earlier entry
-    macd_crossover = (row["MACD"] > row["MACD_Signal"]) and (row["MACD"] > 0)
+            
+    # RSI above 50 is good indicator of uptrend / bullish
+    rsi_strength = row["RSI"] > 53;
+    # MACD Bullish cross
+    macd_bullish = (row["MACD"] > 0) and row["MACD"] > row["MACD_Signal"] #row["MACD"] > row["MACD_Signal"] or (row["MACD"] > -0.01);
+    # Price breaking above short term trend
+    price_above_sma9 = row["Close"] > row["SMA_9"];
+    # SMA Confirmation of bullish movement
+    SMA_confirmation = row["SMA_9"] > row["SMA_30"];
+    # Ensure average true range is increasing
+    atr_increasing = row["ATR"] > self.data["ATR"].rolling(window=10).mean().iloc[-1] * 1.05;
+    # Ensure price is above VWAP
+    price_above_vwap = row["Close"] > row["VWAP"];
     
-    # MOMENTUM CHECK: Looks for strong momentum
-    momentum_ok = (row["RSI"] > 50) and (row["RSI"] < 80);
-    
-    # PRICE CHECK: Price confirmation, we make it more lenient by lowering the VWAP value if we need to
-    price_above_vwap = row["Close"] > row["VWAP"]
-    price_above_ema = row["Close"] > row["SMA_20"] and row["Close"] > row["SMA_40"]  # Ensures strength
-    
-    # Check if volume is increasing (confirmation of demand)
-    increasing_volume = row["Volume"] > (self.data["Volume"].rolling(window=5).mean().iloc[-1] * 1.25);
-
-    # If we see strong uptrend or a macd_crossover we can look to buy
-    #if uptrend and macd_crossover and momentum_ok and price_above_vwap and price_above_ema and increasing_volume:
-    #if (macd_crossover and momentum_ok and price_above_vwap) or (row["RSI"] > 60 and price_above_ema):
-    if (
-      (macd_crossover and row["RSI"] > 55 and price_above_vwap) or # MACD + Momentum + VWAP
-      (momentum_ok and increasing_volume and price_above_ema) or # Strong Volume + EMA
-      (row["RSI"] > 60 and row["Close"] > row["SMA_9"] and increasing_volume) # RSI + EMA 9 Bounce
-    ):
+    # Strong trend indication, we want to play it safe
+    if (rsi_strength and macd_bullish and price_above_sma9 and SMA_confirmation and atr_increasing and price_above_vwap):
       buy_signal = True;
     
     # Check if holding shares and create an exit condition.
     if self.shares > 0 and self.entry_price is not None:
   
-      # Fixed Stop-loss (cuts losses)
-      if (row["Close"] <= (self.entry_price - self.stop_loss_price)):
+      # Fixed Stop-loss (cuts losses) 
+      # If the buy signal is strong we can hold because otherwise we would just make another purchase that adds to transaction costs
+      if (row["Close"] < (self.entry_price - self.stop_loss_price) and not buy_signal):
         return "SELL";
       
-      # Trailing stop-loss initial value setup
-      if self.trailing_stop_price is None:
-        self.trailing_stop_price = self.entry_price - self.stop_loss_price;
-        
       # Mark the highest marked price
       if self.highest_marked_priced is None:
         self.highest_marked_priced = self.entry_price;
-        
+      
+      # Set up initial trailing stop price
+      if self.trailing_stop_price is None:
+        self.trailing_stop_price = self.entry_price - self.stop_loss_price;
+      
       # If the price moves favorably, move the trailing stop price up but only on strong gains to prevent premature exits
-      growth_percent = (row["Close"] / self.highest_marked_priced) - 1
       self.highest_marked_priced = max(self.highest_marked_priced, row["Close"]);
       
-      # If the growth is at least 0.5% then adjust
-      if (row["Close"] > self.entry_price) and (growth_percent >= 0.005):
-          
-        new_trailing_stop = row["Close"] - (row["Close"] * (self.minimum_percent_stop_loss/100));
+      new_trailing_stop = self.trailing_stop_price;
+      if (row["Close"] > self.entry_price):
         
-        # Always try to increase the trailing stop price so we can get out
+        gain_percent = ((row["Close"]/self.entry_price) - 1);
+        
+        # For every percent gain we get we will make the stop loss price tighter.
+        # At 50% gains we will 100% cash out.
+        guarantee_cash_out_threshold = 0.8;
+        # If gain percent is 50 -> 50/50 = 1, 1-1 = 0. Set the multiplier to 0 so we will exit at current price
+        # If gain percent is 25 -> 25/50 = 0.5, 1-0.5 = .5, set multiplier to .5 so if stop loss price was .1 it will shrink to .05 making it closer to the closing price
+        # If gain percent is 1 -> 1/50 = 0.02, 1-0.02 = 0.98, set multiplier to 0.98 so we start choking out the trailing stop price
+        stop_loss_price_multiplier = 1 - (gain_percent / guarantee_cash_out_threshold);
+        #stop_loss_price_multiplier = 1 - (np.log1p(gain_percent) / np.log1p(guarantee_cash_out_threshold))
+
+        # We want to secure profits, if there is high growth rate tighten the rope to secure profits
+        new_trailing_stop = row["Close"] - (self.stop_loss_price * stop_loss_price_multiplier)
         self.trailing_stop_price = max(self.trailing_stop_price, new_trailing_stop);
-        
+        import numpy as np
+
       # If the price drops to our trailing_stop_price then we will sell and guarantee profits
-      if row["Close"] <= self.trailing_stop_price:
+      # If we would still buy then perhaps we should hold, buying would lead to increased transaction costs
+      if row["Close"] < self.trailing_stop_price and not buy_signal:
         return "SELL";
     
     if buy_signal:
@@ -195,7 +201,9 @@ class TradingBot:
       self.cash += net_revenue;
       self.shares = 0;
       
+      # Reset values
       self.entry_price = None;
+      self.highest_marked_priced = None;
       self.trailing_stop_price = None;
       
       self.trade_log.append((action, price, datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'), sold_shares))

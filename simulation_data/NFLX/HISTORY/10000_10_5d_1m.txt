@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:40
+    Symbol: NFLX
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9878.46
+    Profit/Loss: $-121.54 (-1.22%)
+    Stop Loss Price: 2.99
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:40  1     BUY        $1047.00      9         
+    2025-02-21 00:38:40  2     SELL       $1043.80      9         
+    2025-02-21 00:38:40  3     BUY        $1034.36      9         
+    2025-02-21 00:38:40  4     SELL       $1028.50      9         
+
+    ==============================

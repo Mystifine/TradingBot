@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:43
+    Symbol: AA
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9898.20
+    Profit/Loss: $-101.80 (-1.02%)
+    Stop Loss Price: 0.19
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:42  1     BUY        $37.43        266       
+    2025-02-21 00:43:42  2     SELL       $37.18        266       
+    2025-02-21 00:43:43  3     BUY        $37.26        265       
+
+    ==============================

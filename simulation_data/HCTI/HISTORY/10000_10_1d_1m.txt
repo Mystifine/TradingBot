@@ -1,27 +1,18 @@
-
     === Trading Simulation Log ===
-    Date: 2025-02-20 00:51:01
+    Date: 2025-02-20 23:24:18
     Symbol: HCTI
     Period: 1d
     Interval: 1m
     Tax: $10.00
     Initial Cash: $10000.00
-    Final Value: $8971.19
-    Profit/Loss: $-1028.81 (-10.29%)
-    Stop Loss Price: 0.00
-    Total Trades: 10
+    Final Value: $10503.02
+    Profit/Loss: $503.02 (5.03%)
+    Stop Loss Price: 0.02
+    Total Trades: 3
     Trade History:
-    No.   Action     Price        Shares    
-1     BUY        $0.57         17569     
-2     SELL       $0.56         17569     
-3     BUY        $0.56         17830     
-4     SELL       $0.55         17830     
-5     BUY        $0.45         21636     
-6     SELL       $0.44         21636     
-7     BUY        $0.46         20765     
-8     SELL       $0.45         20765     
-9     BUY        $0.45         20370     
-10    SELL       $0.44         20370     
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 23:24:18  1     BUY        $0.45         22116     
+    2025-02-20 23:24:18  2     SELL       $0.49         22116     
+    2025-02-20 23:24:18  3     BUY        $0.51         21218     
 
     ==============================
-    

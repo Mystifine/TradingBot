@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:24
+    Symbol: WY
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9938.27
+    Profit/Loss: $-61.73 (-0.62%)
+    Stop Loss Price: 0.09
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:24  1     BUY        $29.90        334       
+    2025-02-21 00:43:24  2     SELL       $29.80        334       
+    2025-02-21 00:43:24  3     BUY        $29.98        331       
+
+    ==============================

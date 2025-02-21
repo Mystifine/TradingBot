@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:07
+    Symbol: SRE
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10023.13
+    Profit/Loss: $23.13 (0.23%)
+    Stop Loss Price: 0.18
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:06  1     BUY        $84.09        118       
+    2025-02-21 00:41:06  2     SELL       $84.34        118       
+    2025-02-21 00:41:06  3     BUY        $84.62        118       
+    2025-02-21 00:41:06  4     SELL       $84.90        118       
+
+    ==============================

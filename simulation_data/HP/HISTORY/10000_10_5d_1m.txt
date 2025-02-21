@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:27
+    Symbol: HP
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9905.49
+    Profit/Loss: $-94.51 (-0.95%)
+    Stop Loss Price: 0.09
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:27  1     BUY        $26.54        376       
+    2025-02-21 00:43:27  2     SELL       $26.41        376       
+    2025-02-21 00:43:27  3     BUY        $26.42        375       
+    2025-02-21 00:43:27  4     SELL       $26.41        375       
+
+    ==============================

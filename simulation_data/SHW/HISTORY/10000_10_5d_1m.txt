@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:08
+    Symbol: SHW
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9921.51
+    Profit/Loss: $-78.49 (-0.78%)
+    Stop Loss Price: 0.71
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:07  1     BUY        $362.50       27        
+    2025-02-21 00:40:07  2     SELL       $364.83       27        
+    2025-02-21 00:40:07  3     BUY        $356.84       28        
+    2025-02-21 00:40:07  4     SELL       $355.52       28        
+    2025-02-21 00:40:08  5     BUY        $351.72       28        
+    2025-02-21 00:40:08  6     SELL       $350.49       28        
+    2025-02-21 00:40:08  7     BUY        $350.09       28        
+
+    ==============================

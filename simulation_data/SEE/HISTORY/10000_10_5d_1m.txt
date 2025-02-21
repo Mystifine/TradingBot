@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:06
+    Symbol: SEE
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9823.31
+    Profit/Loss: $-176.69 (-1.77%)
+    Stop Loss Price: 0.12
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:06  1     BUY        $33.62        297       
+    2025-02-21 00:43:06  2     SELL       $33.50        297       
+    2025-02-21 00:43:06  3     BUY        $33.68        294       
+    2025-02-21 00:43:06  4     SELL       $33.47        294       
+    2025-02-21 00:43:06  5     BUY        $33.11        297       
+    2025-02-21 00:43:06  6     SELL       $33.04        297       
+
+    ==============================

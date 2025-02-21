@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-20 23:24:12
+    Symbol: YINN
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9922.95
+    Profit/Loss: $-77.05 (-0.77%)
+    Stop Loss Price: 0.12
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 23:24:12  1     BUY        $43.26        230       
+    2025-02-20 23:24:12  2     SELL       $43.13        230       
+    2025-02-20 23:24:12  3     BUY        $42.33        234       
+    2025-02-20 23:24:12  4     SELL       $42.18        234       
+    2025-02-20 23:24:12  5     BUY        $42.94        230       
+
+    ==============================

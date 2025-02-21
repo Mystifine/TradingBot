@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:34
+    Symbol: ES
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9904.81
+    Profit/Loss: $-95.19 (-0.95%)
+    Stop Loss Price: 0.11
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:34  1     BUY        $62.89        158       
+    2025-02-21 00:41:34  2     SELL       $62.60        158       
+    2025-02-21 00:41:34  3     BUY        $62.48        158       
+    2025-02-21 00:41:34  4     SELL       $62.36        158       
+    2025-02-21 00:41:34  5     BUY        $61.51        160       
+    2025-02-21 00:41:34  6     SELL       $61.69        160       
+
+    ==============================

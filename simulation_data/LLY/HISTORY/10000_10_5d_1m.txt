@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:22
+    Symbol: LLY
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10077.48
+    Profit/Loss: $77.48 (0.77%)
+    Stop Loss Price: 5.65
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:22  1     BUY        $856.65       11        
+    2025-02-21 00:38:22  2     SELL       $852.57       11        
+    2025-02-21 00:38:22  3     BUY        $856.92       11        
+    2025-02-21 00:38:22  4     SELL       $871.68       11        
+
+    ==============================

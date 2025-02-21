@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:50
+    Symbol: XYL
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9859.48
+    Profit/Loss: $-140.52 (-1.41%)
+    Stop Loss Price: 0.20
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:49  1     BUY        $129.50       77        
+    2025-02-21 00:42:49  2     SELL       $129.29       77        
+    2025-02-21 00:42:49  3     BUY        $130.54       76        
+    2025-02-21 00:42:49  4     SELL       $129.94       76        
+    2025-02-21 00:42:49  5     BUY        $130.29       75        
+    2025-02-21 00:42:49  6     SELL       $130.04       75        
+
+    ==============================

@@ -1,0 +1,16 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:08:17
+    Symbol: IFF
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9994.34
+    Profit/Loss: $-5.66 (-0.06%)
+    Stop Loss Price: 0.20
+    Total Trades: 1
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:08:17  1     BUY        $80.12        124       
+
+    ==============================

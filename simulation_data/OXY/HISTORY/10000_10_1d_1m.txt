@@ -1,0 +1,16 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:08:08
+    Symbol: OXY
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9977.59
+    Profit/Loss: $-22.41 (-0.22%)
+    Stop Loss Price: 0.12
+    Total Trades: 1
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:08:08  1     BUY        $52.17        191       
+
+    ==============================

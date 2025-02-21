@@ -1,17 +1,17 @@
-
     === Trading Simulation Log ===
-    Date: 2025-02-20 00:51:01
+    Date: 2025-02-20 23:24:19
     Symbol: PWM
     Period: 1d
     Interval: 1m
     Tax: $10.00
     Initial Cash: $10000.00
-    Final Value: $10000.00
-    Profit/Loss: $0.00 (0.00%)
-    Stop Loss Price: 0.01
-    Total Trades: 0
+    Final Value: $9727.40
+    Profit/Loss: $-272.60 (-2.73%)
+    Stop Loss Price: 0.02
+    Total Trades: 2
     Trade History:
-    No.   Action     Price        Shares    
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 23:24:19  1     BUY        $0.71         14112     
+    2025-02-20 23:24:19  2     SELL       $0.69         14112     
 
     ==============================
-    

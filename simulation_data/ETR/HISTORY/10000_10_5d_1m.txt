@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:32
+    Symbol: ETR
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10120.60
+    Profit/Loss: $120.60 (1.21%)
+    Stop Loss Price: 0.18
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:32  1     BUY        $85.98        116       
+    2025-02-21 00:42:32  2     SELL       $86.93        116       
+    2025-02-21 00:42:32  3     BUY        $86.92        115       
+    2025-02-21 00:42:32  4     SELL       $86.90        115       
+    2025-02-21 00:42:32  5     BUY        $87.04        115       
+    2025-02-21 00:42:32  6     SELL       $87.48        115       
+    2025-02-21 00:42:32  7     BUY        $87.69        115       
+    2025-02-21 00:42:32  8     SELL       $88.06        115       
+
+    ==============================

@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:20
+    Symbol: PEP
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10120.18
+    Profit/Loss: $120.18 (1.20%)
+    Stop Loss Price: 0.43
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:19  1     BUY        $145.05       68        
+    2025-02-21 00:38:19  2     SELL       $145.36       68        
+    2025-02-21 00:38:19  3     BUY        $142.59       70        
+    2025-02-21 00:38:19  4     SELL       $144.72       70        
+    2025-02-21 00:38:20  5     BUY        $149.10       67        
+
+    ==============================

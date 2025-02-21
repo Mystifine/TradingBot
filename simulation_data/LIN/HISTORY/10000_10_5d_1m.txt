@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:51
+    Symbol: LIN
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10085.97
+    Profit/Loss: $85.97 (0.86%)
+    Stop Loss Price: 0.91
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:50  1     BUY        $460.13       21        
+    2025-02-21 00:38:51  2     SELL       $459.74       21        
+    2025-02-21 00:38:51  3     BUY        $455.07       21        
+    2025-02-21 00:38:51  4     SELL       $461.93       21        
+    2025-02-21 00:38:51  5     BUY        $461.95       21        
+
+    ==============================

@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:24
+    Symbol: WMB
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9899.93
+    Profit/Loss: $-100.07 (-1.00%)
+    Stop Loss Price: 0.14
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:24  1     BUY        $56.29        177       
+    2025-02-21 00:41:24  2     SELL       $56.15        177       
+    2025-02-21 00:41:24  3     BUY        $57.68        172       
+    2025-02-21 00:41:24  4     SELL       $57.48        172       
+
+    ==============================

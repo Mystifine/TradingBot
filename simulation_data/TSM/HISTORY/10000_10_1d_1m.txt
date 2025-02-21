@@ -1,0 +1,16 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-20 23:24:15
+    Symbol: TSM
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10045.75
+    Profit/Loss: $45.75 (0.46%)
+    Stop Loss Price: 0.26
+    Total Trades: 1
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 23:24:15  1     BUY        $198.91       50        
+
+    ==============================

@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:19
+    Symbol: BKNG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9943.40
+    Profit/Loss: $-56.60 (-0.57%)
+    Stop Loss Price: 25.91
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:19  1     BUY        $5116.60      1         
+    2025-02-21 00:39:19  2     SELL       $5080.00      1         
+
+    ==============================

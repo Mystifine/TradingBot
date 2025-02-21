@@ -1,0 +1,16 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-20 23:24:16
+    Symbol: NIO
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10024.36
+    Profit/Loss: $24.36 (0.24%)
+    Stop Loss Price: 0.02
+    Total Trades: 1
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 23:24:16  1     BUY        $4.36         2291      
+
+    ==============================

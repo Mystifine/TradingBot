@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:08
+    Symbol: SPG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9988.58
+    Profit/Loss: $-11.42 (-0.11%)
+    Stop Loss Price: 0.29
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:07  1     BUY        $184.55       54        
+    2025-02-21 00:41:07  2     SELL       $185.10       54        
+    2025-02-21 00:41:07  3     BUY        $184.45       54        
+    2025-02-21 00:41:07  4     SELL       $186.29       54        
+    2025-02-21 00:41:07  5     BUY        $186.04       54        
+    2025-02-21 00:41:07  6     SELL       $185.46       54        
+    2025-02-21 00:41:08  7     BUY        $185.98       53        
+    2025-02-21 00:41:08  8     SELL       $185.43       53        
+
+    ==============================

@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:13
+    Symbol: PG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9899.52
+    Profit/Loss: $-100.48 (-1.00%)
+    Stop Loss Price: 0.44
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:13  1     BUY        $164.46       60        
+    2025-02-21 00:38:13  2     SELL       $164.62       60        
+    2025-02-21 00:38:13  3     BUY        $164.70       60        
+    2025-02-21 00:38:13  4     SELL       $165.13       60        
+    2025-02-21 00:38:13  5     BUY        $162.70       61        
+    2025-02-21 00:38:13  6     SELL       $162.33       61        
+    2025-02-21 00:38:13  7     BUY        $165.90       59        
+    2025-02-21 00:38:13  8     SELL       $165.34       59        
+
+    ==============================

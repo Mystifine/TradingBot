@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:11
+    Symbol: BLK
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9772.24
+    Profit/Loss: $-227.76 (-2.28%)
+    Stop Loss Price: 2.91
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:11  1     BUY        $977.30       10        
+    2025-02-21 00:39:11  2     SELL       $974.16       10        
+    2025-02-21 00:39:11  3     BUY        $967.84       10        
+    2025-02-21 00:39:11  4     SELL       $964.10       10        
+    2025-02-21 00:39:11  5     BUY        $976.47       10        
+    2025-02-21 00:39:11  6     SELL       $968.21       10        
+    2025-02-21 00:39:11  7     BUY        $990.53       9         
+
+    ==============================

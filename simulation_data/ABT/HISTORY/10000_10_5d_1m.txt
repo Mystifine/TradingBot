@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:41
+    Symbol: ABT
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9899.71
+    Profit/Loss: $-100.29 (-1.00%)
+    Stop Loss Price: 0.19
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:41  1     BUY        $132.25       75        
+    2025-02-21 00:38:41  2     SELL       $132.00       75        
+    2025-02-21 00:38:41  3     BUY        $130.66       76        
+    2025-02-21 00:38:41  4     SELL       $130.24       76        
+    2025-02-21 00:38:41  5     BUY        $133.16       74        
+
+    ==============================

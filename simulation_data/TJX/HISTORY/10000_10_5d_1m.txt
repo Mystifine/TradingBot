@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:56
+    Symbol: TJX
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9959.20
+    Profit/Loss: $-40.80 (-0.41%)
+    Stop Loss Price: 0.18
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:55  1     BUY        $123.82       80        
+    2025-02-21 00:39:55  2     SELL       $123.56       80        
+
+    ==============================

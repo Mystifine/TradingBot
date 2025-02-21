@@ -1,0 +1,24 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:31
+    Symbol: FFIV
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9766.05
+    Profit/Loss: $-233.95 (-2.34%)
+    Stop Loss Price: 0.72
+    Total Trades: 9
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:31  1     BUY        $310.82       32        
+    2025-02-21 00:43:31  2     SELL       $310.04       32        
+    2025-02-21 00:43:31  3     BUY        $307.05       32        
+    2025-02-21 00:43:31  4     SELL       $305.55       32        
+    2025-02-21 00:43:31  5     BUY        $308.71       31        
+    2025-02-21 00:43:31  6     SELL       $307.59       31        
+    2025-02-21 00:43:31  7     BUY        $310.05       31        
+    2025-02-21 00:43:31  8     SELL       $308.88       31        
+    2025-02-21 00:43:31  9     BUY        $304.66       32        
+
+    ==============================

@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:29
+    Symbol: SWK
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10058.53
+    Profit/Loss: $58.53 (0.59%)
+    Stop Loss Price: 0.33
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:28  1     BUY        $88.28        113       
+    2025-02-21 00:42:28  2     SELL       $88.97        113       
+
+    ==============================

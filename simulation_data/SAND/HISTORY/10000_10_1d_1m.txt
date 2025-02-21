@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:09:45
+    Symbol: SAND
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9924.11
+    Profit/Loss: $-75.89 (-0.76%)
+    Stop Loss Price: 0.03
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:09:45  1     BUY        $6.17         1619      
+    2025-02-21 00:09:45  2     SELL       $6.14         1619      
+    2025-02-21 00:09:45  3     BUY        $6.18         1605      
+
+    ==============================

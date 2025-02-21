@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:09:45
+    Symbol: FNV
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10021.16
+    Profit/Loss: $21.16 (0.21%)
+    Stop Loss Price: 0.23
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:09:45  1     BUY        $140.68       71        
+    2025-02-21 00:09:45  2     SELL       $140.39       71        
+    2025-02-21 00:09:45  3     BUY        $140.66       70        
+
+    ==============================

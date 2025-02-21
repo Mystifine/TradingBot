@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:20
+    Symbol: PPG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9991.21
+    Profit/Loss: $-8.79 (-0.09%)
+    Stop Loss Price: 0.20
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:19  1     BUY        $118.06       84        
+    2025-02-21 00:41:19  2     SELL       $118.72       84        
+    2025-02-21 00:41:20  3     BUY        $116.79       85        
+    2025-02-21 00:41:20  4     SELL       $116.50       85        
+
+    ==============================

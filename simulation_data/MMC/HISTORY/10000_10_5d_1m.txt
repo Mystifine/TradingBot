@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:51
+    Symbol: MMC
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9875.81
+    Profit/Loss: $-124.19 (-1.24%)
+    Stop Loss Price: 0.32
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:50  1     BUY        $231.38       43        
+    2025-02-21 00:39:50  2     SELL       $230.96       43        
+    2025-02-21 00:39:51  3     BUY        $231.08       43        
+    2025-02-21 00:39:51  4     SELL       $229.79       43        
+    2025-02-21 00:39:51  5     BUY        $230.62       42        
+
+    ==============================

@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:54
+    Symbol: MSCI
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9912.62
+    Profit/Loss: $-87.38 (-0.87%)
+    Stop Loss Price: 1.37
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:54  1     BUY        $572.99       17        
+    2025-02-21 00:41:54  2     SELL       $570.14       17        
+    2025-02-21 00:41:54  3     BUY        $575.00       17        
+
+    ==============================

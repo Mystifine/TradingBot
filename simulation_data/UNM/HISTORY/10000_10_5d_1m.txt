@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:18
+    Symbol: UNM
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9916.35
+    Profit/Loss: $-83.65 (-0.84%)
+    Stop Loss Price: 0.15
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:17  1     BUY        $74.47        134       
+    2025-02-21 00:43:17  2     SELL       $74.00        134       
+
+    ==============================

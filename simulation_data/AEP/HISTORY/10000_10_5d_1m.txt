@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:36
+    Symbol: AEP
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9892.65
+    Profit/Loss: $-107.35 (-1.07%)
+    Stop Loss Price: 0.18
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:35  1     BUY        $102.19       97        
+    2025-02-21 00:40:35  2     SELL       $102.04       97        
+    2025-02-21 00:40:36  3     BUY        $103.08       96        
+    2025-02-21 00:40:36  4     SELL       $102.53       96        
+
+    ==============================

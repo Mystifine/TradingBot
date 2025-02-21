@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:36
+    Symbol: WEC
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9914.29
+    Profit/Loss: $-85.71 (-0.86%)
+    Stop Loss Price: 0.15
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:35  1     BUY        $103.01       96        
+    2025-02-21 00:41:35  2     SELL       $103.17       96        
+    2025-02-21 00:41:35  3     BUY        $103.34       96        
+    2025-02-21 00:41:35  4     SELL       $103.08       96        
+    2025-02-21 00:41:35  5     BUY        $103.34       96        
+    2025-02-21 00:41:35  6     SELL       $103.20       96        
+    2025-02-21 00:41:35  7     BUY        $103.63       95        
+    2025-02-21 00:41:35  8     SELL       $103.81       95        
+
+    ==============================

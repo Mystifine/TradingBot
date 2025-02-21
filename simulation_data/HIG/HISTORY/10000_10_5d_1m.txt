@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:33
+    Symbol: HIG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9870.52
+    Profit/Loss: $-129.48 (-1.29%)
+    Stop Loss Price: 0.14
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:33  1     BUY        $112.72       88        
+    2025-02-21 00:42:33  2     SELL       $112.32       88        
+    2025-02-21 00:42:33  3     BUY        $113.03       87        
+    2025-02-21 00:42:33  4     SELL       $112.40       87        
+
+    ==============================

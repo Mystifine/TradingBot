@@ -3,6 +3,7 @@ import yfinance as yf;
 import time;
 import os;
 import datetime;
+
 from TradingBot import TradingBot;
 
 class TradingSimulator:
@@ -55,7 +56,10 @@ class TradingSimulator:
     
     for index, row in self.trading_bot.data.iterrows():
       action = self.trading_bot.checkTradeSignal(row);
-      # print(f"Action: {action} | Close: {row['Close']:.2f} | RSI: {row['RSI']:.2f} | SMA_9: {row['SMA_9']:.2f} | SMA_20: {row["SMA_20"]:.2f} | SMA_50: {row["SMA_50"]:.2f} | VWAP: {row["VWAP"]:.2f}")
+      
+      trailing_stop_price = self.trading_bot.trailing_stop_price if self.trading_bot.trailing_stop_price is not None else row['Close']
+
+      print(f"Action: {action} | Close: {row['Close']:.2f} | RSI: {row['RSI']:.2f} | SMA_9: {row['SMA_9']:.2f} | MACD: {row["MACD"]:.2f} | MACD_Signal: {row["MACD_Signal"]:.2f} | Trailing_Stop_Price: ${ trailing_stop_price:.2f}")
       
       if action in ["BUY", "SELL"]:
         self.trading_bot.executeTrade(action, row["Close"]);

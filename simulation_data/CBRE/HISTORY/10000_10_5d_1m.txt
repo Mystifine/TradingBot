@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:55
+    Symbol: CBRE
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9928.98
+    Profit/Loss: $-71.02 (-0.71%)
+    Stop Loss Price: 0.36
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:55  1     BUY        $141.34       70        
+    2025-02-21 00:41:55  2     SELL       $140.98       70        
+    2025-02-21 00:41:55  3     BUY        $141.33       70        
+    2025-02-21 00:41:55  4     SELL       $142.08       70        
+    2025-02-21 00:41:55  5     BUY        $143.66       69        
+    2025-02-21 00:41:55  6     SELL       $143.10       69        
+
+    ==============================

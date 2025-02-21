@@ -1,0 +1,16 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:07:29
+    Symbol: BDX
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10041.92
+    Profit/Loss: $41.92 (0.42%)
+    Stop Loss Price: 0.32
+    Total Trades: 1
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:07:29  1     BUY        $226.88       44        
+
+    ==============================

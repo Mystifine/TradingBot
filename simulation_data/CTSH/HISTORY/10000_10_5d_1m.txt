@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:02
+    Symbol: CTSH
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9987.98
+    Profit/Loss: $-12.02 (-0.12%)
+    Stop Loss Price: 0.15
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:02  1     BUY        $89.90        111       
+    2025-02-21 00:41:02  2     SELL       $90.32        111       
+    2025-02-21 00:41:02  3     BUY        $87.89        113       
+    2025-02-21 00:41:02  4     SELL       $87.73        113       
+
+    ==============================

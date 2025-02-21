@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:39
+    Symbol: NUE
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10045.66
+    Profit/Loss: $45.66 (0.46%)
+    Stop Loss Price: 0.32
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:38  1     BUY        $136.43       73        
+    2025-02-21 00:43:38  2     SELL       $136.88       73        
+    2025-02-21 00:43:38  3     BUY        $137.75       72        
+    2025-02-21 00:43:38  4     SELL       $140.21       72        
+    2025-02-21 00:43:39  5     BUY        $142.53       71        
+    2025-02-21 00:43:39  6     SELL       $141.82       71        
+    2025-02-21 00:43:39  7     BUY        $142.02       71        
+    2025-02-21 00:43:39  8     SELL       $141.56       71        
+
+    ==============================

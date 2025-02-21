@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:03
+    Symbol: HAS
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10439.70
+    Profit/Loss: $439.70 (4.40%)
+    Stop Loss Price: 0.32
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:03  1     BUY        $63.88        156       
+    2025-02-21 00:43:03  2     SELL       $67.49        156       
+    2025-02-21 00:43:03  3     BUY        $67.36        156       
+    2025-02-21 00:43:03  4     SELL       $66.82        156       
+
+    ==============================

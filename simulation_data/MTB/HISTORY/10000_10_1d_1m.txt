@@ -1,0 +1,16 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:08:35
+    Symbol: MTB
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9980.75
+    Profit/Loss: $-19.25 (-0.19%)
+    Stop Loss Price: 0.38
+    Total Trades: 1
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:08:35  1     BUY        $197.62       50        
+
+    ==============================

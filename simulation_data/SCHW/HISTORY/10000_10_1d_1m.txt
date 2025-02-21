@@ -1,0 +1,16 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:07:14
+    Symbol: SCHW
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10047.34
+    Profit/Loss: $47.34 (0.47%)
+    Stop Loss Price: 0.25
+    Total Trades: 1
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:07:14  1     BUY        $81.39        122       
+
+    ==============================

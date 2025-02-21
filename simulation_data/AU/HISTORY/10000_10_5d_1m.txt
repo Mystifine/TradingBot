@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:44:59
+    Symbol: AU
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10219.00
+    Profit/Loss: $219.00 (2.19%)
+    Stop Loss Price: 0.11
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:44:59  1     BUY        $31.08        321       
+    2025-02-21 00:44:59  2     SELL       $32.00        321       
+    2025-02-21 00:44:59  3     BUY        $32.40        316       
+    2025-02-21 00:44:59  4     SELL       $32.28        316       
+
+    ==============================

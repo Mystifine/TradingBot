@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:46
+    Symbol: MTD
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10017.10
+    Profit/Loss: $17.10 (0.17%)
+    Stop Loss Price: 3.96
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:46  1     BUY        $1297.43      7         
+    2025-02-21 00:41:46  2     SELL       $1302.73      7         
+
+    ==============================

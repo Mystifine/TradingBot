@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:10
+    Symbol: HCA
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9912.66
+    Profit/Loss: $-87.34 (-0.87%)
+    Stop Loss Price: 0.47
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:10  1     BUY        $317.08       31        
+    2025-02-21 00:40:10  2     SELL       $317.34       31        
+    2025-02-21 00:40:10  3     BUY        $323.10       30        
+    2025-02-21 00:40:10  4     SELL       $322.61       30        
+    2025-02-21 00:40:10  5     BUY        $323.57       30        
+    2025-02-21 00:40:10  6     SELL       $322.88       30        
+
+    ==============================

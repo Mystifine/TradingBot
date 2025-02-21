@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:33
+    Symbol: DXC
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9874.28
+    Profit/Loss: $-125.72 (-1.26%)
+    Stop Loss Price: 0.07
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:32  1     BUY        $20.60        484       
+    2025-02-21 00:43:33  2     SELL       $20.49        484       
+    2025-02-21 00:43:33  3     BUY        $21.35        464       
+    2025-02-21 00:43:33  4     SELL       $21.28        464       
+
+    ==============================

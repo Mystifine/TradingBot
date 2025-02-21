@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:09
+    Symbol: GS
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10091.15
+    Profit/Loss: $91.15 (0.91%)
+    Stop Loss Price: 2.09
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:08  1     BUY        $651.93       15        
+    2025-02-21 00:39:08  2     SELL       $659.34       15        
+
+    ==============================

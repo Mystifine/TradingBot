@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:26
+    Symbol: T
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9891.19
+    Profit/Loss: $-108.81 (-1.09%)
+    Stop Loss Price: 0.06
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:25  1     BUY        $25.74        388       
+    2025-02-21 00:39:25  2     SELL       $25.67        388       
+    2025-02-21 00:39:26  3     BUY        $26.18        379       
+    2025-02-21 00:39:26  4     SELL       $26.07        379       
+
+    ==============================

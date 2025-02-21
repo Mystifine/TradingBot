@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:26
+    Symbol: MCHP
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9705.24
+    Profit/Loss: $-294.76 (-2.95%)
+    Stop Loss Price: 0.43
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:26  1     BUY        $62.20        160       
+    2025-02-21 00:41:26  2     SELL       $61.72        160       
+    2025-02-21 00:41:26  3     BUY        $65.06        152       
+    2025-02-21 00:41:26  4     SELL       $64.46        152       
+    2025-02-21 00:41:26  5     BUY        $64.04        152       
+    2025-02-21 00:41:26  6     SELL       $63.61        152       
+
+    ==============================

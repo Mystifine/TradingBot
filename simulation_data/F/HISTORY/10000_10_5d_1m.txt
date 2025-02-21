@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:22
+    Symbol: F
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9766.41
+    Profit/Loss: $-233.59 (-2.34%)
+    Stop Loss Price: 0.05
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:22  1     BUY        $9.34         1069      
+    2025-02-21 00:40:22  2     SELL       $9.32         1069      
+    2025-02-21 00:40:22  3     BUY        $9.51         1046      
+    2025-02-21 00:40:22  4     SELL       $9.44         1046      
+    2025-02-21 00:40:22  5     BUY        $9.30         1060      
+    2025-02-21 00:40:22  6     SELL       $9.22         1060      
+
+    ==============================

@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:16
+    Symbol: PLD
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9913.92
+    Profit/Loss: $-86.08 (-0.86%)
+    Stop Loss Price: 0.27
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:15  1     BUY        $121.69       82        
+    2025-02-21 00:39:15  2     SELL       $122.13       82        
+    2025-02-21 00:39:15  3     BUY        $121.80       82        
+    2025-02-21 00:39:15  4     SELL       $120.92       82        
+    2025-02-21 00:39:16  5     BUY        $120.93       81        
+
+    ==============================

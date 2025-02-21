@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:23
+    Symbol: GWW
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9839.78
+    Profit/Loss: $-160.22 (-1.60%)
+    Stop Loss Price: 2.79
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:23  1     BUY        $1031.20      9         
+    2025-02-21 00:42:23  2     SELL       $1028.33      9         
+    2025-02-21 00:42:23  3     BUY        $1028.28      9         
+    2025-02-21 00:42:23  4     SELL       $1028.83      9         
+    2025-02-21 00:42:23  5     BUY        $1021.68      9         
+    2025-02-21 00:42:23  6     SELL       $1012.86      9         
+
+    ==============================

@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:44
+    Symbol: PPL
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9937.83
+    Profit/Loss: $-62.17 (-0.62%)
+    Stop Loss Price: 0.05
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:44  1     BUY        $34.03        293       
+    2025-02-21 00:42:44  2     SELL       $33.97        293       
+    2025-02-21 00:42:44  3     BUY        $33.65        295       
+    2025-02-21 00:42:44  4     SELL       $33.83        295       
+    2025-02-21 00:42:44  5     BUY        $34.21        291       
+    2025-02-21 00:42:44  6     SELL       $34.21        291       
+    2025-02-21 00:42:44  7     BUY        $34.35        290       
+    2025-02-21 00:42:44  8     SELL       $34.29        290       
+
+    ==============================

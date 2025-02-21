@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-20 22:13:46
+    Symbol: RIVN
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10358.26
+    Profit/Loss: $358.26 (3.58%)
+    Stop Loss Price: 0.07
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 22:13:45  1     BUY        $12.99        768       
+    2025-02-20 22:13:45  2     SELL       $13.67        768       
+    2025-02-20 22:13:46  3     BUY        $13.93        753       
+    2025-02-20 22:13:46  4     SELL       $13.77        753       
+
+    ==============================

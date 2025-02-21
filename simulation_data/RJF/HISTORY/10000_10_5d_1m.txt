@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:36
+    Symbol: RJF
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9938.93
+    Profit/Loss: $-61.07 (-0.61%)
+    Stop Loss Price: 0.69
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:36  1     BUY        $160.50       62        
+    2025-02-21 00:42:36  2     SELL       $160.91       62        
+    2025-02-21 00:42:36  3     BUY        $153.16       65        
+    2025-02-21 00:42:36  4     SELL       $152.44       65        
+
+    ==============================

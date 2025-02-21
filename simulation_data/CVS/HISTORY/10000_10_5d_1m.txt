@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:08
+    Symbol: CVS
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9930.43
+    Profit/Loss: $-69.57 (-0.70%)
+    Stop Loss Price: 0.16
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:07  1     BUY        $66.51        150       
+    2025-02-21 00:39:07  2     SELL       $66.74        150       
+    2025-02-21 00:39:07  3     BUY        $66.65        150       
+    2025-02-21 00:39:07  4     SELL       $66.44        150       
+    2025-02-21 00:39:07  5     BUY        $66.83        148       
+    2025-02-21 00:39:07  6     SELL       $66.74        148       
+
+    ==============================

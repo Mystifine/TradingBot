@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:02
+    Symbol: CARR
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9943.48
+    Profit/Loss: $-56.52 (-0.57%)
+    Stop Loss Price: 0.16
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:01  1     BUY        $63.78        156       
+    2025-02-21 00:42:01  2     SELL       $63.61        156       
+    2025-02-21 00:42:02  3     BUY        $67.10        148       
+
+    ==============================

@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:12
+    Symbol: MET
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9850.19
+    Profit/Loss: $-149.81 (-1.50%)
+    Stop Loss Price: 0.14
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:12  1     BUY        $82.43        121       
+    2025-02-21 00:41:12  2     SELL       $82.60        121       
+    2025-02-21 00:41:12  3     BUY        $82.14        121       
+    2025-02-21 00:41:12  4     SELL       $81.94        121       
+    2025-02-21 00:41:12  5     BUY        $82.32        120       
+    2025-02-21 00:41:12  6     SELL       $82.19        120       
+    2025-02-21 00:41:12  7     BUY        $83.13        119       
+    2025-02-21 00:41:12  8     SELL       $82.71        119       
+
+    ==============================

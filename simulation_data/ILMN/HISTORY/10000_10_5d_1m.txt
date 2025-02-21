@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:24
+    Symbol: ILMN
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9926.96
+    Profit/Loss: $-73.04 (-0.73%)
+    Stop Loss Price: 0.47
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:24  1     BUY        $97.18        102       
+    2025-02-21 00:40:24  2     SELL       $96.66        102       
+
+    ==============================

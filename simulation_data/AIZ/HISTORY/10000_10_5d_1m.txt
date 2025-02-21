@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:16
+    Symbol: AIZ
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9843.44
+    Profit/Loss: $-156.56 (-1.57%)
+    Stop Loss Price: 0.37
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:15  1     BUY        $208.00       48        
+    2025-02-21 00:43:15  2     SELL       $206.66       48        
+    2025-02-21 00:43:15  3     BUY        $203.28       48        
+    2025-02-21 00:43:15  4     SELL       $202.50       48        
+    2025-02-21 00:43:15  5     BUY        $201.51       48        
+    2025-02-21 00:43:15  6     SELL       $202.52       48        
+    2025-02-21 00:43:16  7     BUY        $202.84       48        
+    2025-02-21 00:43:16  8     SELL       $202.35       48        
+
+    ==============================

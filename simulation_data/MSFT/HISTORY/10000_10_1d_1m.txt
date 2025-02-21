@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:06:45
+    Symbol: MSFT
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9955.19
+    Profit/Loss: $-44.81 (-0.45%)
+    Stop Loss Price: 0.51
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:06:45  1     BUY        $418.24       23        
+    2025-02-21 00:06:45  2     SELL       $417.60       23        
+    2025-02-21 00:06:45  3     BUY        $416.13       23        
+
+    ==============================

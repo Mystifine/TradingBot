@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:07:40
+    Symbol: NSC
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9961.20
+    Profit/Loss: $-38.80 (-0.39%)
+    Stop Loss Price: 0.47
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:07:40  1     BUY        $247.74       40        
+    2025-02-21 00:07:40  2     SELL       $247.27       40        
+
+    ==============================

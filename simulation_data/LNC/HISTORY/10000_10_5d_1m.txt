@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:17
+    Symbol: LNC
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10026.61
+    Profit/Loss: $26.61 (0.27%)
+    Stop Loss Price: 0.10
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:16  1     BUY        $39.04        255       
+    2025-02-21 00:43:16  2     SELL       $39.41        255       
+    2025-02-21 00:43:16  3     BUY        $39.09        257       
+    2025-02-21 00:43:16  4     SELL       $38.99        257       
+
+    ==============================

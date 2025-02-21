@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:13
+    Symbol: ODFL
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9882.19
+    Profit/Loss: $-117.81 (-1.18%)
+    Stop Loss Price: 0.46
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:13  1     BUY        $208.20       47        
+    2025-02-21 00:42:13  2     SELL       $208.75       47        
+    2025-02-21 00:42:13  3     BUY        $208.59       47        
+    2025-02-21 00:42:13  4     SELL       $207.28       47        
+    2025-02-21 00:42:13  5     BUY        $208.49       47        
+    2025-02-21 00:42:13  6     SELL       $208.02       47        
+
+    ==============================

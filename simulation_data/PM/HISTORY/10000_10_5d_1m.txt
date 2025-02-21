@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:56
+    Symbol: PM
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9890.38
+    Profit/Loss: $-109.62 (-1.10%)
+    Stop Loss Price: 0.25
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:56  1     BUY        $149.06       67        
+    2025-02-21 00:38:56  2     SELL       $148.74       67        
+    2025-02-21 00:38:56  3     BUY        $149.80       66        
+    2025-02-21 00:38:56  4     SELL       $149.07       66        
+
+    ==============================

@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:48
+    Symbol: AJG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9891.70
+    Profit/Loss: $-108.30 (-1.08%)
+    Stop Loss Price: 0.44
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:48  1     BUY        $329.29       30        
+    2025-02-21 00:41:48  2     SELL       $328.39       30        
+    2025-02-21 00:41:48  3     BUY        $321.66       30        
+    2025-02-21 00:41:48  4     SELL       $321.20       30        
+    2025-02-21 00:41:48  5     BUY        $326.22       30        
+    2025-02-21 00:41:48  6     SELL       $325.98       30        
+
+    ==============================

@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:03
+    Symbol: INTU
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9861.55
+    Profit/Loss: $-138.45 (-1.38%)
+    Stop Loss Price: 1.29
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:02  1     BUY        $583.89       17        
+    2025-02-21 00:39:02  2     SELL       $583.51       17        
+    2025-02-21 00:39:02  3     BUY        $588.86       16        
+    2025-02-21 00:39:02  4     SELL       $586.42       16        
+    2025-02-21 00:39:03  5     BUY        $579.83       17        
+    2025-02-21 00:39:03  6     SELL       $579.92       17        
+    2025-02-21 00:39:03  7     BUY        $581.83       16        
+    2025-02-21 00:39:03  8     SELL       $580.92       16        
+
+    ==============================

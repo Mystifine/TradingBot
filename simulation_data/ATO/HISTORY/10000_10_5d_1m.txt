@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:48
+    Symbol: ATO
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9857.79
+    Profit/Loss: $-142.21 (-1.42%)
+    Stop Loss Price: 0.20
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:47  1     BUY        $146.71       68        
+    2025-02-21 00:42:47  2     SELL       $146.55       68        
+    2025-02-21 00:42:47  3     BUY        $147.94       67        
+    2025-02-21 00:42:47  4     SELL       $147.70       67        
+    2025-02-21 00:42:47  5     BUY        $147.86       67        
+    2025-02-21 00:42:47  6     SELL       $147.65       67        
+    2025-02-21 00:42:47  7     BUY        $149.07       66        
+    2025-02-21 00:42:47  8     SELL       $148.74       66        
+
+    ==============================

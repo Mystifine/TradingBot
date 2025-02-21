@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:09:47
+    Symbol: GOLD
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9943.52
+    Profit/Loss: $-56.48 (-0.56%)
+    Stop Loss Price: 0.08
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:09:47  1     BUY        $18.85        529       
+    2025-02-21 00:09:47  2     SELL       $18.77        529       
+    2025-02-21 00:09:47  3     BUY        $18.80        528       
+
+    ==============================

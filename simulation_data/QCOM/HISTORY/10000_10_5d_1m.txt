@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:58
+    Symbol: QCOM
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9943.97
+    Profit/Loss: $-56.03 (-0.56%)
+    Stop Loss Price: 0.52
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:58  1     BUY        $172.36       57        
+    2025-02-21 00:38:58  2     SELL       $171.80       57        
+    2025-02-21 00:38:58  3     BUY        $173.07       57        
+    2025-02-21 00:38:58  4     SELL       $172.18       57        
+    2025-02-21 00:38:58  5     BUY        $173.61       56        
+    2025-02-21 00:38:58  6     SELL       $175.62       56        
+    2025-02-21 00:38:58  7     BUY        $175.21       56        
+    2025-02-21 00:38:58  8     SELL       $175.10       56        
+
+    ==============================

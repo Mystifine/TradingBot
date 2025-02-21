@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:38
+    Symbol: ADBE
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9884.85
+    Profit/Loss: $-115.15 (-1.15%)
+    Stop Loss Price: 1.05
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:37  1     BUY        $463.10       21        
+    2025-02-21 00:38:37  2     SELL       $462.00       21        
+    2025-02-21 00:38:37  3     BUY        $460.05       21        
+    2025-02-21 00:38:37  4     SELL       $461.16       21        
+    2025-02-21 00:38:37  5     BUY        $460.62       21        
+    2025-02-21 00:38:37  6     SELL       $458.46       21        
+    2025-02-21 00:38:38  7     BUY        $454.52       21        
+
+    ==============================

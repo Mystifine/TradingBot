@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:58
+    Symbol: CME
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9831.33
+    Profit/Loss: $-168.67 (-1.69%)
+    Stop Loss Price: 0.38
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:57  1     BUY        $251.19       39        
+    2025-02-21 00:39:57  2     SELL       $250.29       39        
+    2025-02-21 00:39:57  3     BUY        $246.02       40        
+    2025-02-21 00:39:57  4     SELL       $244.80       40        
+    2025-02-21 00:39:58  5     BUY        $250.10       39        
+    2025-02-21 00:39:58  6     SELL       $249.46       39        
+
+    ==============================

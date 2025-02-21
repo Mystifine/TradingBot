@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:29
+    Symbol: BKR
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9807.90
+    Profit/Loss: $-192.10 (-1.92%)
+    Stop Loss Price: 0.15
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:28  1     BUY        $46.56        214       
+    2025-02-21 00:41:28  2     SELL       $46.44        214       
+    2025-02-21 00:41:28  3     BUY        $46.59        213       
+    2025-02-21 00:41:28  4     SELL       $46.29        213       
+    2025-02-21 00:41:29  5     BUY        $46.78        210       
+    2025-02-21 00:41:29  6     SELL       $46.63        210       
+    2025-02-21 00:41:29  7     BUY        $46.92        209       
+
+    ==============================

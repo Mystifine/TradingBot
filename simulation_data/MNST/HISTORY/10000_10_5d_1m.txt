@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:54
+    Symbol: MNST
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10044.55
+    Profit/Loss: $44.55 (0.45%)
+    Stop Loss Price: 0.11
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:54  1     BUY        $50.18        199       
+    2025-02-21 00:40:54  2     SELL       $50.26        199       
+    2025-02-21 00:40:54  3     BUY        $51.02        195       
+    2025-02-21 00:40:54  4     SELL       $51.58        195       
+    2025-02-21 00:40:54  5     BUY        $51.39        196       
+    2025-02-21 00:40:54  6     SELL       $51.28        196       
+
+    ==============================

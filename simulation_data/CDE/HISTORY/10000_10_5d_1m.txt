@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:44:48
+    Symbol: CDE
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10103.17
+    Profit/Loss: $103.17 (1.03%)
+    Stop Loss Price: 0.04
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:44:48  1     BUY        $7.18         1391      
+    2025-02-21 00:44:48  2     SELL       $7.18         1391      
+    2025-02-21 00:44:48  3     BUY        $6.61         1507      
+    2025-02-21 00:44:48  4     SELL       $6.71         1507      
+
+    ==============================

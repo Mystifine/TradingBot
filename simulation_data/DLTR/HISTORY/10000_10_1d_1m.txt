@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:08:28
+    Symbol: DLTR
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9971.14
+    Profit/Loss: $-28.86 (-0.29%)
+    Stop Loss Price: 0.44
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:08:27  1     BUY        $76.53        130       
+    2025-02-21 00:08:27  2     SELL       $74.94        130       
+    2025-02-21 00:08:27  3     BUY        $76.28        128       
+    2025-02-21 00:08:27  4     SELL       $78.06        128       
+    2025-02-21 00:08:28  5     BUY        $76.31        130       
+
+    ==============================

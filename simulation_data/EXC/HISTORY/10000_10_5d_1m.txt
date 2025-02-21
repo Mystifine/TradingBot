@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:57
+    Symbol: EXC
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9822.23
+    Profit/Loss: $-177.77 (-1.78%)
+    Stop Loss Price: 0.06
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:56  1     BUY        $42.96        232       
+    2025-02-21 00:41:56  2     SELL       $42.93        232       
+    2025-02-21 00:41:56  3     BUY        $42.69        233       
+    2025-02-21 00:41:56  4     SELL       $42.34        233       
+    2025-02-21 00:41:57  5     BUY        $42.65        231       
+    2025-02-21 00:41:57  6     SELL       $42.56        231       
+    2025-02-21 00:41:57  7     BUY        $43.18        227       
+
+    ==============================

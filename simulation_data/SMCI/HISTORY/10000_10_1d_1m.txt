@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-20 23:24:14
+    Symbol: SMCI
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10008.56
+    Profit/Loss: $8.56 (0.09%)
+    Stop Loss Price: 0.52
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 23:24:14  1     BUY        $56.76        176       
+    2025-02-20 23:24:14  2     SELL       $56.12        176       
+    2025-02-20 23:24:14  3     BUY        $58.37        168       
+
+    ==============================

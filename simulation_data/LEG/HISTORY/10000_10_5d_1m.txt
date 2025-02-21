@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:04
+    Symbol: LEG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10398.89
+    Profit/Loss: $398.89 (3.99%)
+    Stop Loss Price: 0.03
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:04  1     BUY        $9.98         1001      
+    2025-02-21 00:43:04  2     SELL       $10.85        1001      
+    2025-02-21 00:43:04  3     BUY        $10.45        1038      
+    2025-02-21 00:43:04  4     SELL       $10.24        1038      
+    2025-02-21 00:43:04  5     BUY        $10.15        1046      
+    2025-02-21 00:43:04  6     SELL       $9.94         1046      
+
+    ==============================

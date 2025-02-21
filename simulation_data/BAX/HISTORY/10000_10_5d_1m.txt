@@ -1,0 +1,17 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:25
+    Symbol: BAX
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9924.92
+    Profit/Loss: $-75.08 (-0.75%)
+    Stop Loss Price: 0.11
+    Total Trades: 2
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:25  1     BUY        $32.64        306       
+    2025-02-21 00:41:25  2     SELL       $32.46        306       
+
+    ==============================

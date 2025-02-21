@@ -1,0 +1,16 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:07:35
+    Symbol: UPS
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10065.68
+    Profit/Loss: $65.68 (0.66%)
+    Stop Loss Price: 0.26
+    Total Trades: 1
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:07:35  1     BUY        $115.71       86        
+
+    ==============================

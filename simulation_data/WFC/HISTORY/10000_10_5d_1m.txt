@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:48
+    Symbol: WFC
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9915.53
+    Profit/Loss: $-84.47 (-0.84%)
+    Stop Loss Price: 0.15
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:47  1     BUY        $79.96        124       
+    2025-02-21 00:38:47  2     SELL       $79.77        124       
+    2025-02-21 00:38:47  3     BUY        $80.35        123       
+    2025-02-21 00:38:47  4     SELL       $80.18        123       
+
+    ==============================

@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:44:43
+    Symbol: EGO
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9939.23
+    Profit/Loss: $-60.77 (-0.61%)
+    Stop Loss Price: 0.04
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:44:43  1     BUY        $15.00        665       
+    2025-02-21 00:44:43  2     SELL       $14.88        665       
+    2025-02-21 00:44:43  3     BUY        $14.12        700       
+    2025-02-21 00:44:43  4     SELL       $14.20        700       
+
+    ==============================

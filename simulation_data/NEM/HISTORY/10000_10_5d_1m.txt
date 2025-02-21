@@ -1,0 +1,24 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:44:56
+    Symbol: NEM
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9860.63
+    Profit/Loss: $-139.37 (-1.39%)
+    Stop Loss Price: 0.20
+    Total Trades: 9
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:44:56  1     BUY        $47.13        211       
+    2025-02-21 00:44:56  2     SELL       $46.93        211       
+    2025-02-21 00:44:56  3     BUY        $46.90        211       
+    2025-02-21 00:44:56  4     SELL       $46.92        211       
+    2025-02-21 00:44:56  5     BUY        $47.78        207       
+    2025-02-21 00:44:56  6     SELL       $47.58        207       
+    2025-02-21 00:44:56  7     BUY        $47.56        207       
+    2025-02-21 00:44:56  8     SELL       $47.70        207       
+    2025-02-21 00:44:56  9     BUY        $48.11        204       
+
+    ==============================

@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:52
+    Symbol: PH
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9900.46
+    Profit/Loss: $-99.54 (-1.00%)
+    Stop Loss Price: 2.28
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:51  1     BUY        $688.27       14        
+    2025-02-21 00:40:51  2     SELL       $685.38       14        
+    2025-02-21 00:40:51  3     BUY        $694.38       14        
+    2025-02-21 00:40:51  4     SELL       $698.37       14        
+    2025-02-21 00:40:52  5     BUY        $701.67       14        
+    2025-02-21 00:40:52  6     SELL       $698.84       14        
+    2025-02-21 00:40:52  7     BUY        $696.08       14        
+
+    ==============================

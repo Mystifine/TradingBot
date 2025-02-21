@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:14
+    Symbol: MA
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9980.20
+    Profit/Loss: $-19.80 (-0.20%)
+    Stop Loss Price: 1.15
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:14  1     BUY        $567.75       17        
+    2025-02-21 00:38:14  2     SELL       $568.35       17        
+    2025-02-21 00:38:14  3     BUY        $563.29       17        
+
+    ==============================

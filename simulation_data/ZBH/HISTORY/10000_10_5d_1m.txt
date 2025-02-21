@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:11
+    Symbol: ZBH
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10006.76
+    Profit/Loss: $6.76 (0.07%)
+    Stop Loss Price: 0.19
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:10  1     BUY        $99.57        100       
+    2025-02-21 00:42:10  2     SELL       $100.32       100       
+    2025-02-21 00:42:11  3     BUY        $103.35       97        
+    2025-02-21 00:42:11  4     SELL       $103.06       97        
+
+    ==============================

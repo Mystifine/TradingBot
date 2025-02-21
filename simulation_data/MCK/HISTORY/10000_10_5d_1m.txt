@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:38
+    Symbol: MCK
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9844.80
+    Profit/Loss: $-155.20 (-1.55%)
+    Stop Loss Price: 1.78
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:37  1     BUY        $602.47       16        
+    2025-02-21 00:40:37  2     SELL       $600.35       16        
+    2025-02-21 00:40:38  3     BUY        $598.58       16        
+    2025-02-21 00:40:38  4     SELL       $596.80       16        
+    2025-02-21 00:40:38  5     BUY        $604.04       16        
+    2025-02-21 00:40:38  6     SELL       $601.99       16        
+
+    ==============================

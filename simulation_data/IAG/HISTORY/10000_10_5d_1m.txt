@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:45:03
+    Symbol: IAG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9756.45
+    Profit/Loss: $-243.55 (-2.44%)
+    Stop Loss Price: 0.03
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:45:02  1     BUY        $6.61         1511      
+    2025-02-21 00:45:02  2     SELL       $6.56         1511      
+    2025-02-21 00:45:02  3     BUY        $6.41         1542      
+    2025-02-21 00:45:02  4     SELL       $6.38         1542      
+    2025-02-21 00:45:02  5     BUY        $6.36         1544      
+    2025-02-21 00:45:02  6     SELL       $6.32         1544      
+
+    ==============================

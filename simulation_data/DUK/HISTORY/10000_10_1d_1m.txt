@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:07:30
+    Symbol: DUK
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9967.40
+    Profit/Loss: $-32.60 (-0.33%)
+    Stop Loss Price: 0.13
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:07:30  1     BUY        $112.96       88        
+    2025-02-21 00:07:30  2     SELL       $112.79       88        
+    2025-02-21 00:07:30  3     BUY        $113.01       88        
+
+    ==============================

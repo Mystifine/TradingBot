@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:25
+    Symbol: PFG
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9979.28
+    Profit/Loss: $-20.72 (-0.21%)
+    Stop Loss Price: 0.13
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:25  1     BUY        $85.70        116       
+    2025-02-21 00:43:25  2     SELL       $85.78        116       
+    2025-02-21 00:43:25  3     BUY        $86.58        115       
+
+    ==============================

@@ -1,0 +1,16 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:07:43
+    Symbol: MCO
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9992.47
+    Profit/Loss: $-7.53 (-0.08%)
+    Stop Loss Price: 0.73
+    Total Trades: 1
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:07:43  1     BUY        $511.37       19        
+
+    ==============================

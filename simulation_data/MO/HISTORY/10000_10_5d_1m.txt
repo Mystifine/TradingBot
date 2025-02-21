@@ -1,0 +1,21 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:30
+    Symbol: MO
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10032.58
+    Profit/Loss: $32.58 (0.33%)
+    Stop Loss Price: 0.08
+    Total Trades: 6
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:30  1     BUY        $52.74        189       
+    2025-02-21 00:39:30  2     SELL       $53.02        189       
+    2025-02-21 00:39:30  3     BUY        $53.11        188       
+    2025-02-21 00:39:30  4     SELL       $53.40        188       
+    2025-02-21 00:39:30  5     BUY        $53.99        186       
+    2025-02-21 00:39:30  6     SELL       $53.91        186       
+
+    ==============================

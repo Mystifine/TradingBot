@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:17
+    Symbol: MDLZ
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9759.07
+    Profit/Loss: $-240.93 (-2.41%)
+    Stop Loss Price: 0.19
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:16  1     BUY        $62.07        160       
+    2025-02-21 00:39:16  2     SELL       $61.85        160       
+    2025-02-21 00:39:16  3     BUY        $60.83        163       
+    2025-02-21 00:39:16  4     SELL       $60.16        163       
+    2025-02-21 00:39:17  5     BUY        $62.55        156       
+    2025-02-21 00:39:17  6     SELL       $62.35        156       
+    2025-02-21 00:39:17  7     BUY        $62.17        156       
+
+    ==============================

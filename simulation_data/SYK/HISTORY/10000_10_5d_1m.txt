@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:28
+    Symbol: SYK
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9975.00
+    Profit/Loss: $-25.00 (-0.25%)
+    Stop Loss Price: 0.55
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:28  1     BUY        $389.45       25        
+    2025-02-21 00:39:28  2     SELL       $389.65       25        
+    2025-02-21 00:39:28  3     BUY        $386.43       25        
+
+    ==============================

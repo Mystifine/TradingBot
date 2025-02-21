@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-20 23:24:14
+    Symbol: FFIE
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9726.39
+    Profit/Loss: $-273.61 (-2.74%)
+    Stop Loss Price: 0.02
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 23:24:14  1     BUY        $1.69         5911      
+    2025-02-20 23:24:14  2     SELL       $1.67         5911      
+    2025-02-20 23:24:14  3     BUY        $1.70         5801      
+    2025-02-20 23:24:14  4     SELL       $1.68         5801      
+    2025-02-20 23:24:14  5     BUY        $1.65         5876      
+
+    ==============================

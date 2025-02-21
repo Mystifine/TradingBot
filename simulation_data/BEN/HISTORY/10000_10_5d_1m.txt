@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:14
+    Symbol: BEN
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9819.91
+    Profit/Loss: $-180.09 (-1.80%)
+    Stop Loss Price: 0.05
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:13  1     BUY        $20.58        485       
+    2025-02-21 00:43:13  2     SELL       $20.55        485       
+    2025-02-21 00:43:13  3     BUY        $20.54        484       
+    2025-02-21 00:43:13  4     SELL       $20.52        484       
+    2025-02-21 00:43:13  5     BUY        $21.03        471       
+    2025-02-21 00:43:13  6     SELL       $21.07        471       
+    2025-02-21 00:43:13  7     BUY        $20.94        473       
+    2025-02-21 00:43:13  8     SELL       $20.75        473       
+
+    ==============================

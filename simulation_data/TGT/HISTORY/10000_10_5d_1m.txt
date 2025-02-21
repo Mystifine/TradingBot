@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:39:45
+    Symbol: TGT
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9984.55
+    Profit/Loss: $-15.45 (-0.15%)
+    Stop Loss Price: 0.27
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:39:45  1     BUY        $128.56       77        
+    2025-02-21 00:39:45  2     SELL       $128.75       77        
+    2025-02-21 00:39:45  3     BUY        $128.16       77        
+
+    ==============================

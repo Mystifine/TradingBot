@@ -1,0 +1,22 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:39
+    Symbol: LUV
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10002.53
+    Profit/Loss: $2.53 (0.03%)
+    Stop Loss Price: 0.14
+    Total Trades: 7
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:39  1     BUY        $30.05        332       
+    2025-02-21 00:42:39  2     SELL       $29.91        332       
+    2025-02-21 00:42:39  3     BUY        $29.94        331       
+    2025-02-21 00:42:39  4     SELL       $30.44        331       
+    2025-02-21 00:42:39  5     BUY        $30.28        332       
+    2025-02-21 00:42:39  6     SELL       $30.14        332       
+    2025-02-21 00:42:39  7     BUY        $30.61        326       
+
+    ==============================

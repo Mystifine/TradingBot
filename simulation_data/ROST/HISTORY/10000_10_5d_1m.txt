@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:13
+    Symbol: ROST
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9911.37
+    Profit/Loss: $-88.63 (-0.89%)
+    Stop Loss Price: 0.23
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:13  1     BUY        $138.95       71        
+    2025-02-21 00:41:13  2     SELL       $138.51       71        
+    2025-02-21 00:41:13  3     BUY        $139.90       71        
+    2025-02-21 00:41:13  4     SELL       $139.65       71        
+
+    ==============================

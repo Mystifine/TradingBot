@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:43:15
+    Symbol: IVZ
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9862.80
+    Profit/Loss: $-137.20 (-1.37%)
+    Stop Loss Price: 0.05
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:43:14  1     BUY        $18.48        540       
+    2025-02-21 00:43:14  2     SELL       $18.56        540       
+    2025-02-21 00:43:15  3     BUY        $18.53        540       
+    2025-02-21 00:43:15  4     SELL       $18.27        540       
+
+    ==============================

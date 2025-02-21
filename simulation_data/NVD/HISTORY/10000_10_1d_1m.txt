@@ -1,0 +1,23 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-20 23:24:13
+    Symbol: NVD
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9751.19
+    Profit/Loss: $-248.81 (-2.49%)
+    Stop Loss Price: 0.07
+    Total Trades: 8
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-20 23:24:13  1     BUY        $24.00        416       
+    2025-02-20 23:24:13  2     SELL       $23.92        416       
+    2025-02-20 23:24:13  3     BUY        $24.30        408       
+    2025-02-20 23:24:13  4     SELL       $24.17        408       
+    2025-02-20 23:24:13  5     BUY        $24.18        407       
+    2025-02-20 23:24:13  6     SELL       $24.09        407       
+    2025-02-20 23:24:13  7     BUY        $23.51        417       
+    2025-02-20 23:24:13  8     SELL       $23.41        417       
+
+    ==============================

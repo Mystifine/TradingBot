@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:09:43
+    Symbol: PAAS
+    Period: 1d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9900.52
+    Profit/Loss: $-99.48 (-0.99%)
+    Stop Loss Price: 0.06
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:09:43  1     BUY        $25.47        392       
+    2025-02-21 00:09:43  2     SELL       $25.40        392       
+    2025-02-21 00:09:43  3     BUY        $25.67        387       
+    2025-02-21 00:09:43  4     SELL       $25.61        387       
+    2025-02-21 00:09:43  5     BUY        $25.50        388       
+
+    ==============================

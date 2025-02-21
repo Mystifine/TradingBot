@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:42:09
+    Symbol: DHI
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9980.80
+    Profit/Loss: $-19.20 (-0.19%)
+    Stop Loss Price: 0.27
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:42:08  1     BUY        $127.69       78        
+    2025-02-21 00:42:08  2     SELL       $128.23       78        
+    2025-02-21 00:42:09  3     BUY        $126.81       78        
+    2025-02-21 00:42:09  4     SELL       $126.54       78        
+
+    ==============================

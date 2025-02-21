@@ -1,10 +1,24 @@
 import os;
+import requests;
+import pandas as pd;
+import yfinance as yf;
+import time;
+import matplotlib.pyplot as plt;
+
 from dotenv import load_dotenv;
 from YahooFinanceAPI import YahooFinanceAPI;
+from FinnhubAPI import FinnhubAPI;
 from TradingBot import TradingBot;
 from TradingSimulator import TradingSimulator;
-import matplotlib.pyplot as plt;
-import pandas as pd;
+
+
+def simulateTest(symbol, period, interval, initial_cash, trading_tax, api):
+  trading_bot = TradingBot(symbol, period, interval, initial_cash, trading_tax, api);
+  simulator = TradingSimulator(trading_bot);
+  simulator.runSimulation(0);
+  simulator.logSimulationResults();
+
+  #simulator.liveSimulation(1, simulator.logSimulationResults);
 
 def main():
   # Load environment variables
@@ -15,26 +29,55 @@ def main():
   INTERVAL = "1m"; 
   INITIAL_CASH = 10000; 
   TRADING_TAX = 10; # $ per transaction
-  MINIMUM_PERCENT_STOP_LOSS = 2; # In %
   
   # Simulation run
-  trading_bot = TradingBot(SYMBOL, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX, MINIMUM_PERCENT_STOP_LOSS);
-  simulator = TradingSimulator(trading_bot);
-  simulator.runSimulation(0);
-  #simulator.liveSimulation(1, simulator.logSimulationResults);
-  simulator.logSimulationResults();
+  simulateTest(SYMBOL, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX, YahooFinanceAPI)
   
   """
+  # Fetch the list of S&P 500 companies
   symbols = [
-    # Greens
-    "SOXL", "BOIL", "UCO", "SU", "NPI.TO", "DIS", "CYBN", "ERX",
-    # Reds
-    "BB", "AMC", "ENB", "BNS", "AC.TO", "XIU.TO", "GME", "SOXS",
-    # other
-    "YINN", "NVDA", "NVD", "GOOG", "SAVA", "CHAU", "SMCI", "ASML", "FFIE", "AAPL", "AMD", "TSM", "INTC", "XPEV", "LI", "NIO", "TSLA", "SQQQ", "BABA", "RBLX", "META", "GOOS",
-    # Big losses
-    # "CNSP", "NKLA", "HCTI", "PWM", "BMBL", "ZCAR", "SOPA", "TWG", "POAI", "APTO", "KWE"
+    "AAPL", "MSFT", "AMZN", "GOOGL", "GOOG", "BRK.B", "JNJ", "XOM", "NVDA", "META",
+    "UNH", "TSLA", "JPM", "V", "PG", "MA", "HD", "CVX", "MRK", "PEP",
+    "KO", "LLY", "ABBV", "AVGO", "COST", "MCD", "WMT", "BAC", "PFE", "SPY",
+    "TMO", "DIS", "CSCO", "VZ", "ADBE", "CMCSA", "NFLX", "ABT", "ACN", "DHR",
+    "NKE", "NEE", "WFC", "INTC", "TXN", "LIN", "MDT", "HON", "UNP", "PM",
+    "BMY", "QCOM", "LOW", "RTX", "MS", "INTU", "ORCL", "AMD", "AMGN", "CVS",
+    "GS", "SCHW", "BLK", "IBM", "AMT", "ISRG", "PLD", "MDLZ", "BA", "BKNG",
+    "CAT", "DE", "AXP", "GE", "NOW", "T", "LMT", "SYK", "SPGI", "MO",
+    "ELV", "C", "ADI", "MU", "MMM", "ZTS", "USB", "GILD", "ADP", "CB",
+    "PYPL", "COP", "TGT", "BDX", "CCI", "DUK", "SO", "MMC", "PNC", "APD",
+    "CL", "TJX", "HUM", "CME", "MRNA", "UPS", "SLB", "FISV", "EW", "PGR",
+    "ITW", "SHW", "EOG", "HCA", "CSX", "NSC", "ETN", "EMR", "FDX", "D",
+    "WM", "NOC", "MCO", "KMB", "F", "ILMN", "REGN", "AON", "BSX", "DG",
+    "KLAC", "MPC", "VRTX", "APTV", "ADM", "AEP", "COF", "MCK", "PSA", "AIG",
+    "LRCX", "BK", "ORLY", "TRV", "CNC", "PRU", "MAR", "SBUX", "ECL", "CTAS",
+    "IDXX", "PH", "TEL", "MNST", "AFL", "ALL", "OTIS", "WBA", "KHC", "AZO",
+    "WELL", "CTSH", "RSG", "DOW", "BIIB", "SRE", "SPG", "STZ", "HLT", "PSX",
+    "MET", "ROST", "HPQ", "VLO", "MSI", "OXY", "DLR", "PPG", "TFC", "ED",
+    "YUM", "WMB", "BAX", "MCHP", "PCAR", "BKR", "ENPH", "JCI", "FCX", "NEM",
+    "ES", "WEC", "ROK", "GPN", "XEL", "ANET", "KMI", "IFF", "EQR", "GLW",
+    "STT", "MTD", "KEYS", "AJG", "VRSK", "CDNS", "AME", "FTNT", "HES", "MSCI",
+    "CBRE", "EXC", "PSA", "VICI", "WST", "FIS", "CARR", "LHX", "CTVA", "KR",
+    "DLTR", "NUE", "DHI", "WAT", "ZBH", "PAYX", "ODFL", "CMG", "TT", "AMP",
+    "FAST", "SYY", "VTRS", "MLM", "A", "RMD", "GWW", "MTB", "LEN", "VMC",
+    "TSN", "SWK", "DTE", "ETR", "HIG", "ALB", "EFX", "RJF", "FRC", "LUV",
+    "NTRS", "CINF", "MKC", "HSY", "PPL", "CMS", "AEE", "ATO", "DOV", "XYL",
+    "CAG", "HPE", "K", "SJM", "NWL", "NWSA", "NWS", "MOS", "IPG", "OMC",
+    "WHR", "HAS", "LEG", "BWA", "SEE", "NLSN", "HII", "ALK", "L", "RE",
+    "BEN", "IVZ", "AIZ", "LNC", "UNM", "PBCT", "FRT", "REG", "SLG", "VNO",
+    "WY", "PFG", "LUMN", "HP", "NLOK", "JNPR", "FFIV", "XRX", "DXC", "HST",
+    "PKG", "WRK", "IP", "NUE", "STLD", "RS", "ATI", "AA", "CENX", "X",
+    "CLF", "AKS", "MT", "NEM", "GOLD", "AEM", "AU", "KGC", "BVN", "IAG",
+    "NGD", "EGO", "AUY", "AGI", "PAAS", "HL", "CDE", "SSRM", "WPM", "SAND",
+    "FNV", "RGLD", "OR", "NEM", "GOLD", "AEM", "AU", "KGC", "BVN", "IAG",
+    "NGD", "EGO", "AUY", "AGI", "PAAS", "HL", "CDE", "SSRM", "WPM", "SAND",
+    "FNV", "RGLD", "OR", "NEM", "GOLD", "AEM", "AU", "KGC", "BVN", "IAG",
+    "NGD", "EGO", "AUY", "AGI", "PAAS", "HL", "CDE", "SSRM", "WPM", "SAND",
+    "FNV", "RGLD", "OR", "NEM", "GOLD", "AEM", "AU", "KGC", "BVN", "IAG",
+    "NGD",
   ]
+   
+  #symbols = ["BABA", "BAX", "MELI", "LRCX", "SMCI"];
 
   profit_count = 0;
   neutral_count = 0;
@@ -44,8 +87,8 @@ def main():
   total_losses = [];
   loss_symbols = [];
   for symbol in symbols:
-    trading_bot = TradingBot(symbol, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX, MINIMUM_PERCENT_STOP_LOSS);
-    if not hasattr(trading_bot, "data") or trading_bot.data.empty:
+    trading_bot = TradingBot(symbol, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX);
+    if trading_bot is None or not hasattr(trading_bot, "data") or trading_bot.data.empty:
       continue  # Skip if no valid data
 
     simulator = TradingSimulator(trading_bot);
@@ -63,7 +106,7 @@ def main():
       loss_count += 1;
       loss_symbols.append(symbol);
       total_losses.append( abs(percent_change) )
-
+    time.sleep(.25); # API Request limit or we might get banned
   #print("All Percent Gains:", total_gains)
   #print("Gain Symbols:", gain_symbols);
   #print("All Percent Losses:", total_losses)
@@ -83,12 +126,13 @@ def main():
     average_loss = (sum(total_losses) / (len(total_losses)));
   
   # Output Data
+  total_stocks = profit_count + neutral_count + loss_count;
   print(f"Interval: {INTERVAL}");
   print(f"Period: {PERIOD}");
-  print(f"Profit Rate: {(profit_count/len(symbols))*100:.2f}%");
-  print(f"Neutral Rate (No Orders): {(neutral_count/len(symbols))*100:.2f}%");
-  print(f"Loss Rate: {(loss_count/len(symbols))*100:.2f}%");
-  print(f"Total Stocks: {len(symbols)}");
+  print(f"Profit Rate: {(profit_count/ (total_stocks) )*100:.2f}%");
+  print(f"Neutral Rate (No Orders): {(neutral_count/total_stocks)*100:.2f}%");
+  print(f"Loss Rate: {(loss_count/total_stocks)*100:.2f}%");
+  print(f"Total Stocks: {total_stocks}");
   print(f"Trading Tax: ${TRADING_TAX}");
   print(f"Average Gain: {average_gain:.2f}%")
   print(f"Average Loss: {average_loss:.2f}%")

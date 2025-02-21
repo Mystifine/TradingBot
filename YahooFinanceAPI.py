@@ -1,15 +1,17 @@
 import time;
 import yfinance as yf;
 
-class YahooFinanceAPI:
+from MarketAPI import MarketAPI
+
+class YahooFinanceAPI(MarketAPI):
   def __init__(self, symbol):
-    self.symbol = symbol;
+    super().__init__(symbol);
     self.ticker = yf.Ticker(symbol);
     
   def getStockPrice(self):
     try:
       latest_price = self.ticker.history(period="1d")["Close"].iloc[-1];
-      return {"symbol": self.symbol, "price": round(latest_price, 2)};
+      return round(latest_price, 2);
     except Exception as e:
       return {"error": str(e)};
     

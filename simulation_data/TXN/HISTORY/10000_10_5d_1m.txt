@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:38:50
+    Symbol: TXN
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $10000.62
+    Profit/Loss: $0.62 (0.01%)
+    Stop Loss Price: 0.72
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:38:50  1     BUY        $189.46       52        
+    2025-02-21 00:38:50  2     SELL       $189.40       52        
+    2025-02-21 00:38:50  3     BUY        $198.88       50        
+    2025-02-21 00:38:50  4     SELL       $199.96       50        
+    2025-02-21 00:38:50  5     BUY        $203.97       49        
+
+    ==============================

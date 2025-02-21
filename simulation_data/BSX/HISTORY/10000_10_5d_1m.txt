@@ -1,0 +1,19 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:27
+    Symbol: BSX
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9913.00
+    Profit/Loss: $-87.00 (-0.87%)
+    Stop Loss Price: 0.14
+    Total Trades: 4
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:27  1     BUY        $106.21       94        
+    2025-02-21 00:40:27  2     SELL       $106.03       94        
+    2025-02-21 00:40:27  3     BUY        $105.38       94        
+    2025-02-21 00:40:27  4     SELL       $105.06       94        
+
+    ==============================

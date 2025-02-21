@@ -1,0 +1,18 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:41:31
+    Symbol: JCI
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9930.68
+    Profit/Loss: $-69.32 (-0.69%)
+    Stop Loss Price: 0.19
+    Total Trades: 3
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:41:31  1     BUY        $90.08        110       
+    2025-02-21 00:41:31  2     SELL       $89.72        110       
+    2025-02-21 00:41:31  3     BUY        $88.84        111       
+
+    ==============================

@@ -1,0 +1,20 @@
+    === Trading Simulation Log ===
+    Date: 2025-02-21 00:40:47
+    Symbol: MAR
+    Period: 5d
+    Interval: 1m
+    Tax: $10.00
+    Initial Cash: $10000.00
+    Final Value: $9934.17
+    Profit/Loss: $-65.83 (-0.66%)
+    Stop Loss Price: 0.42
+    Total Trades: 5
+    Trade History:
+    Time                 No.   Action     Price        Shares    
+    2025-02-21 00:40:46  1     BUY        $288.24       34        
+    2025-02-21 00:40:46  2     SELL       $288.39       34        
+    2025-02-21 00:40:47  3     BUY        $284.00       35        
+    2025-02-21 00:40:47  4     SELL       $283.47       35        
+    2025-02-21 00:40:47  5     BUY        $287.29       34        
+
+    ==============================
