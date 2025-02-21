@@ -6,8 +6,9 @@ import time;
 import matplotlib.pyplot as plt;
 
 from dotenv import load_dotenv;
-from YahooFinanceAPI import YahooFinanceAPI;
-from FinnhubAPI import FinnhubAPI;
+from APIS.YahooFinanceAPI import YahooFinanceAPI;
+from APIS.FinnhubAPI import FinnhubAPI;
+from APIS.IBKRAPI import IBKRAPI;
 from TradingBot import TradingBot;
 from TradingSimulator import TradingSimulator;
 
@@ -31,7 +32,7 @@ def main():
   TRADING_TAX = 10; # $ per transaction
   
   # Simulation run
-  simulateTest(SYMBOL, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX, YahooFinanceAPI)
+  simulateTest(SYMBOL, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX, IBKRAPI)
   
   """
   # Fetch the list of S&P 500 companies

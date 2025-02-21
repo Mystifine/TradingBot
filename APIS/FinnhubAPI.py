@@ -3,7 +3,7 @@ import requests;
 import pandas as pd;
 import datetime;
 
-from MarketAPI import MarketAPI;
+from APIS.MarketAPI import MarketAPI;
 from dotenv import load_dotenv;
 
 class FinnhubAPI(MarketAPI):

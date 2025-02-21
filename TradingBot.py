@@ -6,7 +6,7 @@ import ta;
 import datetime;
 import pytz;
 
-from MarketAPI import MarketAPI;
+from APIS.MarketAPI import MarketAPI;
 
 class TradingBot:
   def __init__(self, symbol, period, interval, cash, trading_tax, api : MarketAPI):
