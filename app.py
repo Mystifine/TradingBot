@@ -6,12 +6,12 @@ import time;
 import matplotlib.pyplot as plt;
 
 from dotenv import load_dotenv;
-from APIS.YahooFinanceAPI import YahooFinanceAPI;
-from APIS.FinnhubAPI import FinnhubAPI;
-from APIS.IBKRAPI import IBKRAPI;
+from MarketAPIs.YahooFinanceAPI import YahooFinanceAPI;
+from MarketAPIs.FinnhubAPI import FinnhubAPI;
+from MarketAPIs.IBKRAPI import IBKRAPI;
 from TradingBot import TradingBot;
 from TradingSimulator import TradingSimulator;
-
+from StockGraphingAPI import StockGraphingAPI;
 
 def simulateTest(symbol, period, interval, initial_cash, trading_tax, api):
   trading_bot = TradingBot(symbol, period, interval, initial_cash, trading_tax, api);
@@ -20,19 +20,28 @@ def simulateTest(symbol, period, interval, initial_cash, trading_tax, api):
   simulator.logSimulationResults();
 
   #simulator.liveSimulation(1, simulator.logSimulationResults);
+  
+  return trading_bot;
 
+def graphStockMarket(symbol, period, interval, df):
+  stock_grapher = StockGraphingAPI(symbol, period, interval, df);
+  stock_grapher.plotGraph();
+  
 def main():
   # Load environment variables
   load_dotenv();
   
-  SYMBOL = "SOXL";
+  SYMBOL = "BABA";
   PERIOD = "1d";
   INTERVAL = "1m"; 
   INITIAL_CASH = 10000; 
   TRADING_TAX = 10; # $ per transaction
   
   # Simulation run
-  simulateTest(SYMBOL, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX, IBKRAPI)
+  trading_bot = simulateTest(SYMBOL, PERIOD, INTERVAL, INITIAL_CASH, TRADING_TAX, YahooFinanceAPI)
+  
+  # Graphing data
+  graphStockMarket(SYMBOL, PERIOD, INTERVAL, trading_bot.data);
   
   """
   # Fetch the list of S&P 500 companies

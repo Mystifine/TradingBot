@@ -2,7 +2,7 @@ import time;
 import yfinance as yf;
 import pandas as pd;
 
-from APIS.MarketAPI import MarketAPI
+from MarketAPIs.MarketAPI import MarketAPI
 
 class YahooFinanceAPI(MarketAPI):
   def __init__(self, symbol):

@@ -1,7 +1,8 @@
 import os;
 import pandas as pd;
+
 from ib_insync import *;
-from APIS.MarketAPI import MarketAPI;
+from MarketAPIs.MarketAPI import MarketAPI;
 from dotenv import load_dotenv;
 
 class IBKRAPI(MarketAPI):

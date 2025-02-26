@@ -6,7 +6,7 @@ import ta;
 import datetime;
 import pytz;
 
-from APIS.MarketAPI import MarketAPI;
+from MarketAPIs.MarketAPI import MarketAPI;
 
 class TradingBot:
   def __init__(self, symbol, period, interval, cash, trading_tax, api : MarketAPI):
@@ -102,22 +102,24 @@ class TradingBot:
     market_hour = market_time.hour;
     market_minute = market_time.minute;
     
-    # Do not engage in any activities in the first 30 minutes and last 30 minutes of the stock market
-    if (market_hour == 9 and market_minute < 30) or (market_hour == 15 and market_minute >= 30):
-      return "HOLD";
-    
-    # Force sell at the 25 minute mark to avoid random market spikes near the end and start of the day
-    if self.shares > 0 and market_hour == 15 and market_minute == 25:
+    # Force sell at the last hour and 30 minutes
+    if self.shares > 0 and market_hour >= 15 and market_minute >= 30:
       return "SELL";
+    elif (self.shares == 0 and market_hour >= 15):
+      # If you have no shares left and it's after hours don't do anything
+      return "HOLD";
     
     buy_signal = False;
             
-    # RSI above 50 is good indicator of uptrend / bullish
-    rsi_strength = row["RSI"] > 53;
+    # We're going to try to look for "growing" RSI, this way we can get on the trend very early
+    # Let's make sure that the RSI is at least a certain % above past RSI
+    rsi_growing = row["RSI"] < 60 and row["RSI"] > 30 and row["RSI"] > (self.data["RSI"].rolling(window=5).mean().iloc[-1] * 1.05);
+    
     # MACD Bullish cross
-    macd_bullish = (row["MACD"] > 0) and row["MACD"] > row["MACD_Signal"] #row["MACD"] > row["MACD_Signal"] or (row["MACD"] > -0.01);
+    macd_bullish = row["MACD"] > row["MACD_Signal"];
     # Price breaking above short term trend
     price_above_sma9 = row["Close"] > row["SMA_9"];
+
     # SMA Confirmation of bullish movement
     SMA_confirmation = row["SMA_9"] > row["SMA_30"];
     # Ensure average true range is increasing
@@ -126,7 +128,7 @@ class TradingBot:
     price_above_vwap = row["Close"] > row["VWAP"];
     
     # Strong trend indication, we want to play it safe
-    if (rsi_strength and macd_bullish and price_above_sma9 and SMA_confirmation and atr_increasing and price_above_vwap):
+    if (rsi_growing and price_above_sma9 and macd_bullish):
       buy_signal = True;
     
     # Check if holding shares and create an exit condition.
@@ -155,7 +157,7 @@ class TradingBot:
         
         # For every percent gain we get we will make the stop loss price tighter.
         # At 50% gains we will 100% cash out.
-        guarantee_cash_out_threshold = 0.8;
+        guarantee_cash_out_threshold = 0.2;
         # If gain percent is 50 -> 50/50 = 1, 1-1 = 0. Set the multiplier to 0 so we will exit at current price
         # If gain percent is 25 -> 25/50 = 0.5, 1-0.5 = .5, set multiplier to .5 so if stop loss price was .1 it will shrink to .05 making it closer to the closing price
         # If gain percent is 1 -> 1/50 = 0.02, 1-0.02 = 0.98, set multiplier to 0.98 so we start choking out the trailing stop price
@@ -217,3 +219,6 @@ class TradingBot:
 
     df_trades = pd.DataFrame(self.trade_log)
     print(df_trades)
+
+  def getDataFrame(self):
+    return self.data;

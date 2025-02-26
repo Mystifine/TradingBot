@@ -58,8 +58,10 @@ class TradingSimulator:
       action = self.trading_bot.checkTradeSignal(row);
       
       trailing_stop_price = self.trading_bot.trailing_stop_price if self.trading_bot.trailing_stop_price is not None else row['Close']
+      print(f"Time: {row.name}|Action: {action}|Close: {row['Close']:.2f}|RSI: {row['RSI']:.2f}|SMA_9: {row['SMA_9']:.2f}|MACD: {row["MACD"]:.2f}|MACD_Signal: {row["MACD_Signal"]:.2f}|Stop_Price: ${ trailing_stop_price:.2f}")
 
-      print(f"Action: {action} | Close: {row['Close']:.2f} | RSI: {row['RSI']:.2f} | SMA_9: {row['SMA_9']:.2f} | MACD: {row["MACD"]:.2f} | MACD_Signal: {row["MACD_Signal"]:.2f} | Trailing_Stop_Price: ${ trailing_stop_price:.2f}")
+      # Store our action to be graphed later
+      self.trading_bot.data.loc[row.name, "Action"] = action;      
       
       if action in ["BUY", "SELL"]:
         self.trading_bot.executeTrade(action, row["Close"]);
